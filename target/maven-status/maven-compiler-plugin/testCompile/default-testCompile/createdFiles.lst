@@ -1,2 +1,2 @@
+tests/transactions/TransactionsRunnerTest.class
 tests/ParallelRunnerTest.class
-tests/transactions/TransactionsRunner.class

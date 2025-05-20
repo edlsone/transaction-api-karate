@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
  
     <groupId>io.karatelabs</groupId>
-    <artifactId>transaction-api</artifactId>
+    <artifactId>karate-template</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
  
@@ -21,7 +21,14 @@
             <artifactId>karate-junit5</artifactId>
             <version>${karate.version}</version>
             <scope>test</scope>
-        </dependency>		
+        </dependency>
+        
+        <dependency>
+            <groupId>net.masterthought</groupId>
+            <artifactId>cucumber-reporting</artifactId>
+            <version>5.7.0</version>
+          </dependency>
+		
     </dependencies>
 
     <build>
@@ -50,6 +57,7 @@
                 <version>${maven.surefire.version}</version>
                 <configuration>
                     <argLine>-Dfile.encoding=UTF-8</argLine>
+                    <include>**/*Test.java</include>
                 </configuration>
             </plugin>          
         </plugins>        
