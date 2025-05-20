@@ -1,0 +1,197 @@
+-------------------------------------------------------------------------------
+Test set: tests.ParallelRunnerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.978 s <<< FAILURE! - in tests.ParallelRunnerTest
+tests.ParallelRunnerTest.testParallel  Time elapsed: 2.953 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+js failed:
+>>>>
+01: transaction
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "transaction" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:tests/transactions/create-transaction-bad.feature:11
+js failed:
+>>>>
+01: transaction
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "transaction" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:tests/transactions/create-transaction.feature:18
+js failed:
+>>>>
+01: __arg.transaction
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "__arg" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:tests/transactions/delete-transaction-bad.feature:4
+js failed:
+>>>>
+01: __arg.transaction
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "__arg" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:tests/transactions/delete-transaction.feature:4
+js failed:
+>>>>
+01: __arg.transaction
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "__arg" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:tests/transactions/get-transaction-by-id-bad.feature:4
+js failed:
+>>>>
+01: __arg.transaction
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "__arg" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:tests/transactions/get-transaction-by-id.feature:4
+js failed:
+>>>>
+01: read('../../resources/data/transactions.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: java.io.FileNotFoundException: /Users/edls/NetBeansProjects/transaction-api/target/test-classes/tests/transactions/../../resources/data/transactions.json (No such file or directory)
+- com.intuit.karate.resource.FileResource.getStream(FileResource.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:54)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:109)
+- <js>.:program(Unnamed:1)
+
+classpath:tests/transactions/run-all-transactions.feature:4
+js failed:
+>>>>
+01: read('../../resources/data/transactions.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: java.io.FileNotFoundException: /Users/edls/NetBeansProjects/transaction-api/target/test-classes/tests/transactions/../../resources/data/transactions.json (No such file or directory)
+- com.intuit.karate.resource.FileResource.getStream(FileResource.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:54)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:109)
+- <js>.:program(Unnamed:1)
+
+classpath:tests/transactions/run-all-transactions.feature:4
+js failed:
+>>>>
+01: read('../../resources/data/transactions.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: java.io.FileNotFoundException: /Users/edls/NetBeansProjects/transaction-api/target/test-classes/tests/transactions/../../resources/data/transactions.json (No such file or directory)
+- com.intuit.karate.resource.FileResource.getStream(FileResource.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:54)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:109)
+- <js>.:program(Unnamed:1)
+
+classpath:tests/transactions/run-all-transactions.feature:4
+js failed:
+>>>>
+01: read('../../resources/data/transactions.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: java.io.FileNotFoundException: /Users/edls/NetBeansProjects/transaction-api/target/test-classes/tests/transactions/../../resources/data/transactions.json (No such file or directory)
+- com.intuit.karate.resource.FileResource.getStream(FileResource.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:54)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:109)
+- <js>.:program(Unnamed:1)
+
+classpath:tests/transactions/run-all-transactions.feature:4
+js failed:
+>>>>
+01: read('../../resources/data/transactions.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: java.io.FileNotFoundException: /Users/edls/NetBeansProjects/transaction-api/target/test-classes/tests/transactions/../../resources/data/transactions.json (No such file or directory)
+- com.intuit.karate.resource.FileResource.getStream(FileResource.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:54)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:109)
+- <js>.:program(Unnamed:1)
+
+classpath:tests/transactions/run-all-transactions.feature:4
+js failed:
+>>>>
+01: read('../../resources/data/transactions.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: java.io.FileNotFoundException: /Users/edls/NetBeansProjects/transaction-api/target/test-classes/tests/transactions/../../resources/data/transactions.json (No such file or directory)
+- com.intuit.karate.resource.FileResource.getStream(FileResource.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:54)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:109)
+- <js>.:program(Unnamed:1)
+
+classpath:tests/transactions/run-all-transactions.feature:4
+js failed:
+>>>>
+01: read('../../resources/data/transactions.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: java.io.FileNotFoundException: /Users/edls/NetBeansProjects/transaction-api/target/test-classes/tests/transactions/../../resources/data/transactions.json (No such file or directory)
+- com.intuit.karate.resource.FileResource.getStream(FileResource.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:54)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:109)
+- <js>.:program(Unnamed:1)
+
+classpath:tests/transactions/run-all-transactions.feature:4
+js failed:
+>>>>
+01: read('../../resources/data/transactions.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: java.io.FileNotFoundException: /Users/edls/NetBeansProjects/transaction-api/target/test-classes/tests/transactions/../../resources/data/transactions.json (No such file or directory)
+- com.intuit.karate.resource.FileResource.getStream(FileResource.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:54)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:109)
+- <js>.:program(Unnamed:1)
+
+classpath:tests/transactions/run-all-transactions.feature:4
+js failed:
+>>>>
+01: read('../../resources/data/transactions.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: java.io.FileNotFoundException: /Users/edls/NetBeansProjects/transaction-api/target/test-classes/tests/transactions/../../resources/data/transactions.json (No such file or directory)
+- com.intuit.karate.resource.FileResource.getStream(FileResource.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:54)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:109)
+- <js>.:program(Unnamed:1)
+
+classpath:tests/transactions/run-all-transactions.feature:4
+js failed:
+>>>>
+01: __arg.transaction
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "__arg" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:tests/transactions/update-transactions-bad.feature:4
+js failed:
+>>>>
+01: __arg.transaction
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "__arg" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:tests/transactions/update-transactions.feature:4 ==> expected: <0> but was: <17>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at tests.ParallelRunnerTest.testParallel(ParallelRunnerTest.java:15)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
