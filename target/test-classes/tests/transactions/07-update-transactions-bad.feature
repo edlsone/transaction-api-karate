@@ -1,4 +1,4 @@
-Feature: Update a transaction with bad key
+Feature: Update transactions not found
 
 Background:
   * def incorrectKeyData = read('classpath:data/transactions-incorrect-key-data.json')

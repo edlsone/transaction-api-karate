@@ -1,4 +1,4 @@
-Feature: Update a transaction
+Feature: Update a transaction not found
 
 Scenario: Update transaction by ID
   * def transaction = __arg.transaction

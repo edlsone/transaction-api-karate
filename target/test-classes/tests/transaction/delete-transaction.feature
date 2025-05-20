@@ -1,4 +1,4 @@
-Feature: Delete transaction by id
+Feature: Delete a transactions by id
 
 Scenario: Update transaction by ID
   * def transaction = __arg.transaction

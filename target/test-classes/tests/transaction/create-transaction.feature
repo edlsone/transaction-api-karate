@@ -1,4 +1,4 @@
-Feature: Create a single valid transaction
+Feature: Create a transaction by id
 
 Background:
   * url 'https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev'

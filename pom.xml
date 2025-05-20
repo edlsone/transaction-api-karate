@@ -40,6 +40,7 @@
                 </excludes>
             </testResource>
         </testResources>
+        
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -51,6 +52,7 @@
                     <target>${java.version}</target>
                 </configuration>
             </plugin>
+            
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -62,8 +64,32 @@
                         <exclude>**/TransactionsRunnerTest.java</exclude>
                     </excludes>
                 </configuration>
-            </plugin>          
-        </plugins>        
+            </plugin>
+            
+            <plugin>
+                <groupId>net.masterthought</groupId>
+                <artifactId>maven-cucumber-reporting</artifactId>
+                <version>5.8.5</version>
+                <executions>
+                    <execution>
+                        <id>generate-cucumber-html-reports</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <configuration>
+                            <projectName>Transaction API Tests</projectName>
+                            <outputDirectory>${project.build.directory}/cucumber-html-reports</outputDirectory>
+                            <cucumberOutput>${project.build.directory}/karate-reports/cucumber-json-report.json</cucumberOutput>
+                        </configuration>
+                    </execution>
+                </executions>
+        </plugin>     
+        
+        </plugins>
+        
+ 
+     
     </build>       
     
 </project>

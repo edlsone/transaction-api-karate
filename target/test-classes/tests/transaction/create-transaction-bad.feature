@@ -1,4 +1,4 @@
-Feature: Try to create invalid transaction
+Feature: Delete a transaction
 
 Background:
   * url 'https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev'

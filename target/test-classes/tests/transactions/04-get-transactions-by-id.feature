@@ -1,4 +1,4 @@
-Feature: Get transaction by i9d
+Feature: Get transactions by id
 
 Background:
   * def goodData = read('classpath:data/transactions.json')

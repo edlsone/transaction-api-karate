@@ -1,4 +1,4 @@
-Feature: Try to create invalid transaction
+Feature: Delete transactions from JSON file
 
 Background:
   * def badData = read('classpath:data/transactions-bad.json')

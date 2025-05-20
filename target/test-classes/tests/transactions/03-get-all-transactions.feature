@@ -1,4 +1,4 @@
-Feature: Validate all transaction objects from GET /transactions
+Feature: Get all transactions
 
 Background:
   * url 'https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev'
