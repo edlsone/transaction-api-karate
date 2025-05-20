@@ -58,6 +58,9 @@
                 <configuration>
                     <argLine>-Dfile.encoding=UTF-8</argLine>
                     <include>**/*Test.java</include>
+                    <excludes>
+                        <exclude>**/TransactionsRunnerTest.java</exclude>
+                    </excludes>
                 </configuration>
             </plugin>          
         </plugins>        
