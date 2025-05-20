@@ -1,4 +1,4 @@
-Feature: Delete transaction by id
+Feature: Delete transactions by id
 
 Background:
   * def goodData = read('classpath:data/transactions.json')

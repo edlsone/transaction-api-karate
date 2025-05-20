@@ -1,4 +1,4 @@
-Feature: Get transaction by i9d
+Feature: Get transaction by id
 
 Scenario: Update transaction by ID
   * def transaction = __arg.transaction

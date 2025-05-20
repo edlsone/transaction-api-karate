@@ -1,4 +1,4 @@
-Feature: Run all transaction tests from JSON files
+Feature: Create transactions from JSON file
 
 Background:
   * def goodData = read('classpath:data/transactions.json')

@@ -1,4 +1,4 @@
-Feature: Get transaction by id not found
+Feature: Get transactions by id not found
 
 Background:
   * def incorrectKeyData = read('classpath:data/transactions-incorrect-key-data.json')

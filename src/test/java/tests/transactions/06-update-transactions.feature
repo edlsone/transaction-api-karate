@@ -1,4 +1,4 @@
-Feature: Update a transaction
+Feature: Update  transactions
 
 Background:
   * def goodData = read('classpath:data/transactions.json')

@@ -1,4 +1,4 @@
-Feature: Delete transaction by id not found
+Feature: Delete transactions by id not found
 
 Background:
   * def incorrectKeyData = read('classpath:data/transactions-incorrect-key-data.json')
