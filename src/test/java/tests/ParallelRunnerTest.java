@@ -20,14 +20,25 @@ import org.apache.commons.io.FileUtils;
 class ParallelRunnerTest {
     
     public static void generateReport(String karateOutputPath) {
-        Collection<File> jsonFiles = FileUtils.listFiles(new File(karateOutputPath), new String[]{"json"}, true);
+        // Only include JSONs under a specific report folder (like target/cucumber-report-json)
+        File reportDir = new File(karateOutputPath);
+        Collection<File> jsonFiles = FileUtils.listFiles(reportDir, new String[]{"json"}, false);
+
         List<String> jsonPaths = new ArrayList<>(jsonFiles.size());
-        jsonFiles.forEach(file -> jsonPaths.add(file.getAbsolutePath()));
-        Configuration config = new Configuration(new File("target"),
-                "Transaction API");
+
+        System.out.println("\n********** Files used to generate report **********");
+        jsonFiles.forEach(file -> {
+            String path = file.getAbsolutePath();
+            System.out.println("Using JSON file: " + path);
+            jsonPaths.add(path);
+        });
+        System.out.println("****************************************************");
+
+        Configuration config = new Configuration(new File("target"), "Transaction API");
         ReportBuilder reportBuilder = new ReportBuilder(jsonPaths, config);
         reportBuilder.generateReports();
     }
+
 
     @Test
     @Order(1)       
@@ -38,6 +49,10 @@ class ParallelRunnerTest {
                 .parallel(1);
                 generateReport(results.getReportDir());
                 assertEquals(0, results.getFailCount(), results.getErrorMessages());
+                
+                // 👇 Print where Karate is writing the report (to verify)
+                System.out.println("\n\n\n\n\n\n\n****************************************************");                
+                System.out.println("Report Dir: " + results.getReportDir());
     }
     
     @Test
