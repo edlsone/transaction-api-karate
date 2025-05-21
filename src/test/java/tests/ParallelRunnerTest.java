@@ -24,7 +24,7 @@ class ParallelRunnerTest {
         List<String> jsonPaths = new ArrayList<>(jsonFiles.size());
         jsonFiles.forEach(file -> jsonPaths.add(file.getAbsolutePath()));
         Configuration config = new Configuration(new File("target"),
-                "com.rkdevblog.karate.employee");
+                "Transaction API");
         ReportBuilder reportBuilder = new ReportBuilder(jsonPaths, config);
         reportBuilder.generateReports();
     }
@@ -46,7 +46,8 @@ class ParallelRunnerTest {
         Results results = Runner.path("classpath:tests/transactions/02-create-transactions-bad.feature")
                 .outputCucumberJson(true)
                 .parallel(1);
-        assertEquals(0, results.getFailCount(), results.getErrorMessages());
+                generateReport(results.getReportDir());
+                assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
     
     @Test
@@ -55,7 +56,8 @@ class ParallelRunnerTest {
         Results results = Runner.path("classpath:tests/transactions/03-get-all-transactions.feature")
                 .outputCucumberJson(true)
                 .parallel(1);
-        assertEquals(0, results.getFailCount(), results.getErrorMessages());
+                generateReport(results.getReportDir());
+                assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
     
    @Test
@@ -64,7 +66,8 @@ class ParallelRunnerTest {
         Results results = Runner.path("classpath:tests/transactions/04-get-transactions-by-id.feature")
                 .outputCucumberJson(true)
                 .parallel(1);
-        assertEquals(0, results.getFailCount(), results.getErrorMessages());
+                generateReport(results.getReportDir());
+                assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
     
     @Test
@@ -73,7 +76,8 @@ class ParallelRunnerTest {
         Results results = Runner.path("classpath:tests/transactions/05-get-transactions-by-id-bad.feature")
                 .outputCucumberJson(true)
                 .parallel(1);
-        assertEquals(0, results.getFailCount(), results.getErrorMessages());
+                generateReport(results.getReportDir());
+                assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
     
     @Test
@@ -82,7 +86,8 @@ class ParallelRunnerTest {
         Results results = Runner.path("classpath:tests/transactions/06-update-transactions.feature")
                 .outputCucumberJson(true)
                 .parallel(1);
-        assertEquals(0, results.getFailCount(), results.getErrorMessages());
+                generateReport(results.getReportDir());
+                assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
     
     @Test
@@ -91,7 +96,8 @@ class ParallelRunnerTest {
         Results results = Runner.path("classpath:tests/transactions/07-update-transactions-bad.feature")
                 .outputCucumberJson(true)
                 .parallel(1);
-        assertEquals(0, results.getFailCount(), results.getErrorMessages());
+                generateReport(results.getReportDir());
+                assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
     
     @Test
@@ -100,7 +106,8 @@ class ParallelRunnerTest {
         Results results = Runner.path("classpath:tests/transactions/08-delete-transactions-bad.feature")
                 .outputCucumberJson(true)
                 .parallel(1);
-        assertEquals(0, results.getFailCount(), results.getErrorMessages());
+                generateReport(results.getReportDir());
+                assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
     
     @Test
@@ -109,7 +116,8 @@ class ParallelRunnerTest {
         Results results = Runner.path("classpath:tests/transactions/09-delete-transactions.feature")
                 .outputCucumberJson(true)
                 .parallel(1);
-        assertEquals(0, results.getFailCount(), results.getErrorMessages());
+                generateReport(results.getReportDir());
+                assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
 
 }
