@@ -86,7 +86,7 @@
                       <jsonFiles>
                         <jsonFile>${project.build.directory}/karate-reports/karate.json</jsonFile>
                       </jsonFiles>
-                      <reportTargetDirectory>${project.build.directory}/cucumber-reports</reportTargetDirectory>                    </configuration>
+                    </configuration>
                   </execution>
                 </executions>
               </plugin>
