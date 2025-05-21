@@ -115,7 +115,7 @@ class ParallelRunnerTest {
     void updateTransactionsBad() {
         Results results = Runner.path("classpath:tests/transactions/07-update-transactions-bad.feature")
                 .outputCucumberJson(true)
-                .reportDir("target/karate-reportss")
+                .reportDir("target/karate-reports")
                 .parallel(1);
                 generateReport(results.getReportDir());
                 assertEquals(0, results.getFailCount(), results.getErrorMessages());
