@@ -83,9 +83,7 @@
                     <configuration>
                       <projectName>Karate Test Results</projectName>
                       <outputDirectory>${project.build.directory}/cucumber-html-reports</outputDirectory>
-                      <jsonFiles>
-                        <jsonFile>${project.build.directory}/karate-reports/karate.json</jsonFile>
-                      </jsonFiles>
+                      
                     </configuration>
                   </execution>
                 </executions>

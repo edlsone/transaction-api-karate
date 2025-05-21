@@ -1,4 +1,4 @@
-Feature: Delete a transaction
+Feature: Create a transaction fail
 
 Background:
   * url 'https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev'
