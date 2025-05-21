@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>Transaction API</td>
-      <td>21 May 2025, 09:56</td>
+      <td>21 May 2025, 11:23</td>
     </tr>
   </tbody>
 </table>
@@ -138,7 +138,7 @@ $(document).ready(function() {
           <td >0</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="10253894964">10.253</td>
+          <td class="duration" data-value="10032720210">10.032</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -189,7 +189,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.044</span>
+  <span class="lead-duration duration">0.043</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -232,7 +232,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def goodData = read('classpath:data/transactions.json')</span>
 
-  <span class="lead-duration duration">0.044</span>
+  <span class="lead-duration duration">0.043</span>
 
 </div>
 
@@ -250,7 +250,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>09:56:49.146 karate.env system property was: null 
+        <pre>11:23:44.844 karate.env system property was: null 
 </pre>
       </div>
     </div>
@@ -281,7 +281,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">10.209</span>
+  <span class="lead-duration duration">9.988</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
@@ -324,7 +324,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def check =</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -365,7 +365,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">eval check(goodData)</span>
 
-  <span class="lead-duration duration">5.163</span>
+  <span class="lead-duration duration">5.055</span>
 
 </div>
 
@@ -501,7 +501,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; *</span>
   <span class="name">def isValidTimestamp =</span>
 
-  <span class="lead-duration duration">0.009</span>
+  <span class="lead-duration duration">0.008</span>
 
 </div>
 
@@ -567,7 +567,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; And</span>
   <span class="name">request transaction</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -594,7 +594,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.544</span>
+  <span class="lead-duration duration">0.526</span>
 
 </div>
 
@@ -612,7 +612,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-8" class="collapse collapsable-details">
-        <pre>09:56:49.428 request:
+        <pre>11:23:45.114 request:
 1 &gt; POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Accept: application/json
@@ -623,13 +623,13 @@ $(document).ready(function() {
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;transactionId&quot;:&quot;txn201&quot;,&quot;name&quot;:&quot;Alice&quot;,&quot;title&quot;:&quot;Payment&quot;,&quot;amount&quot;:100,&quot;currency&quot;:&quot;USD&quot;,&quot;timestamp&quot;:&quot;2024-05-01T10:00:00Z&quot;}
 
-09:56:49.788 response time in milliseconds: 357
+11:23:45.471 response time in milliseconds: 354
 1 &lt; 201
-1 &lt; Date: Wed, 21 May 2025 13:56:49 GMT
+1 &lt; Date: Wed, 21 May 2025 15:23:45 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Content-Length: 148
 1 &lt; Connection: keep-alive
-1 &lt; Apigw-Requestid: K69BViknoAMEZqg=
+1 &lt; Apigw-Requestid: K7JwSiRCoAMEPKA=
 {&quot;name&quot;: &quot;Alice&quot;, &quot;title&quot;: &quot;Payment&quot;, &quot;amount&quot;: 100.0, &quot;currency&quot;: &quot;USD&quot;, &quot;timestamp&quot;: &quot;2024-05-01T10:00:00Z&quot;, &quot;id&quot;: &quot;txn201&quot;, &quot;message&quot;: &quot;SUCCESS&quot;}
 
 </pre>
@@ -651,7 +651,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; Then</span>
   <span class="name">status 201</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -706,7 +706,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; *</span>
   <span class="name">match body == { amount: '#number', currency: '#string', id: '#string', name: '#string', title: '#string', timestamp: '#string', message: '#string' }</span>
 
-  <span class="lead-duration duration">0.009</span>
+  <span class="lead-duration duration">0.010</span>
 
 </div>
 
@@ -990,7 +990,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.178</span>
+  <span class="lead-duration duration">0.207</span>
 
 </div>
 
@@ -1008,7 +1008,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-10" class="collapse collapsable-details">
-        <pre>09:56:49.882 request:
+        <pre>11:23:45.561 request:
 1 &gt; POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Accept: application/json
@@ -1019,13 +1019,13 @@ $(document).ready(function() {
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;transactionId&quot;:&quot;txn202&quot;,&quot;name&quot;:&quot;Bob&quot;,&quot;title&quot;:&quot;Invoice&quot;,&quot;amount&quot;:200,&quot;currency&quot;:&quot;USD&quot;,&quot;timestamp&quot;:&quot;2024-05-02T15:30:00Z&quot;}
 
-09:56:50.057 response time in milliseconds: 174
+11:23:45.765 response time in milliseconds: 203
 1 &lt; 201
-1 &lt; Date: Wed, 21 May 2025 13:56:50 GMT
+1 &lt; Date: Wed, 21 May 2025 15:23:45 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Content-Length: 146
 1 &lt; Connection: keep-alive
-1 &lt; Apigw-Requestid: K69BYjWioAMEZHw=
+1 &lt; Apigw-Requestid: K7JwVghJoAMEZog=
 {&quot;name&quot;: &quot;Bob&quot;, &quot;title&quot;: &quot;Invoice&quot;, &quot;amount&quot;: 200.0, &quot;currency&quot;: &quot;USD&quot;, &quot;timestamp&quot;: &quot;2024-05-02T15:30:00Z&quot;, &quot;id&quot;: &quot;txn202&quot;, &quot;message&quot;: &quot;SUCCESS&quot;}
 
 </pre>
@@ -1157,7 +1157,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; *</span>
   <span class="name">if (!isValidTimestamp(body.timestamp)) karate.fail('Invalid timestamp: ' + body.timestamp)</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -1386,7 +1386,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.188</span>
+  <span class="lead-duration duration">0.186</span>
 
 </div>
 
@@ -1404,7 +1404,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-12" class="collapse collapsable-details">
-        <pre>09:56:50.073 request:
+        <pre>11:23:45.780 request:
 1 &gt; POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Accept: application/json
@@ -1415,13 +1415,13 @@ $(document).ready(function() {
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;transactionId&quot;:&quot;txn203&quot;,&quot;name&quot;:&quot;Charlie&quot;,&quot;title&quot;:&quot;Refund&quot;,&quot;amount&quot;:150,&quot;currency&quot;:&quot;USD&quot;,&quot;timestamp&quot;:&quot;2024-05-03T09:45:00Z&quot;}
 
-09:56:50.258 response time in milliseconds: 185
+11:23:45.964 response time in milliseconds: 183
 1 &lt; 201
-1 &lt; Date: Wed, 21 May 2025 13:56:50 GMT
+1 &lt; Date: Wed, 21 May 2025 15:23:46 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Content-Length: 149
 1 &lt; Connection: keep-alive
-1 &lt; Apigw-Requestid: K69BajTEIAMEZVg=
+1 &lt; Apigw-Requestid: K7JwXhUnIAMEP3A=
 {&quot;name&quot;: &quot;Charlie&quot;, &quot;title&quot;: &quot;Refund&quot;, &quot;amount&quot;: 150.0, &quot;currency&quot;: &quot;USD&quot;, &quot;timestamp&quot;: &quot;2024-05-03T09:45:00Z&quot;, &quot;id&quot;: &quot;txn203&quot;, &quot;message&quot;: &quot;SUCCESS&quot;}
 
 </pre>
@@ -1782,7 +1782,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.171</span>
+  <span class="lead-duration duration">0.187</span>
 
 </div>
 
@@ -1800,7 +1800,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-14" class="collapse collapsable-details">
-        <pre>09:56:50.269 request:
+        <pre>11:23:45.980 request:
 1 &gt; POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Accept: application/json
@@ -1811,13 +1811,13 @@ $(document).ready(function() {
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;transactionId&quot;:&quot;txn204&quot;,&quot;name&quot;:&quot;Diana&quot;,&quot;title&quot;:&quot;Payment&quot;,&quot;amount&quot;:250,&quot;currency&quot;:&quot;USD&quot;,&quot;timestamp&quot;:&quot;2024-05-04T11:20:00Z&quot;}
 
-09:56:50.438 response time in milliseconds: 168
+11:23:46.164 response time in milliseconds: 184
 1 &lt; 201
-1 &lt; Date: Wed, 21 May 2025 13:56:50 GMT
+1 &lt; Date: Wed, 21 May 2025 15:23:46 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Content-Length: 148
 1 &lt; Connection: keep-alive
-1 &lt; Apigw-Requestid: K69BchteIAMEPvA=
+1 &lt; Apigw-Requestid: K7JwZgyuIAMEPVg=
 {&quot;name&quot;: &quot;Diana&quot;, &quot;title&quot;: &quot;Payment&quot;, &quot;amount&quot;: 250.0, &quot;currency&quot;: &quot;USD&quot;, &quot;timestamp&quot;: &quot;2024-05-04T11:20:00Z&quot;, &quot;id&quot;: &quot;txn204&quot;, &quot;message&quot;: &quot;SUCCESS&quot;}
 
 </pre>
@@ -2178,7 +2178,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.191</span>
+  <span class="lead-duration duration">0.173</span>
 
 </div>
 
@@ -2196,7 +2196,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-16" class="collapse collapsable-details">
-        <pre>09:56:50.448 request:
+        <pre>11:23:46.174 request:
 1 &gt; POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Accept: application/json
@@ -2207,13 +2207,13 @@ $(document).ready(function() {
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;transactionId&quot;:&quot;txn205&quot;,&quot;name&quot;:&quot;Ethan&quot;,&quot;title&quot;:&quot;Invoice&quot;,&quot;amount&quot;:300,&quot;currency&quot;:&quot;USD&quot;,&quot;timestamp&quot;:&quot;2024-05-05T13:10:00Z&quot;}
 
-09:56:50.638 response time in milliseconds: 189
+11:23:46.346 response time in milliseconds: 171
 1 &lt; 201
-1 &lt; Date: Wed, 21 May 2025 13:56:50 GMT
+1 &lt; Date: Wed, 21 May 2025 15:23:46 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Content-Length: 148
 1 &lt; Connection: keep-alive
-1 &lt; Apigw-Requestid: K69BehwboAMEPNg=
+1 &lt; Apigw-Requestid: K7JwbiU7IAMEPHA=
 {&quot;name&quot;: &quot;Ethan&quot;, &quot;title&quot;: &quot;Invoice&quot;, &quot;amount&quot;: 300.0, &quot;currency&quot;: &quot;USD&quot;, &quot;timestamp&quot;: &quot;2024-05-05T13:10:00Z&quot;, &quot;id&quot;: &quot;txn205&quot;, &quot;message&quot;: &quot;SUCCESS&quot;}
 
 </pre>
@@ -2574,7 +2574,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.191</span>
+  <span class="lead-duration duration">0.172</span>
 
 </div>
 
@@ -2592,7 +2592,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-18" class="collapse collapsable-details">
-        <pre>09:56:50.647 request:
+        <pre>11:23:46.355 request:
 1 &gt; POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Accept: application/json
@@ -2603,13 +2603,13 @@ $(document).ready(function() {
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;transactionId&quot;:&quot;txn206&quot;,&quot;name&quot;:&quot;Fiona&quot;,&quot;title&quot;:&quot;Payment&quot;,&quot;amount&quot;:120,&quot;currency&quot;:&quot;USD&quot;,&quot;timestamp&quot;:&quot;2024-05-06T14:00:00Z&quot;}
 
-09:56:50.837 response time in milliseconds: 189
+11:23:46.525 response time in milliseconds: 170
 1 &lt; 201
-1 &lt; Date: Wed, 21 May 2025 13:56:50 GMT
+1 &lt; Date: Wed, 21 May 2025 15:23:46 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Content-Length: 148
 1 &lt; Connection: keep-alive
-1 &lt; Apigw-Requestid: K69BghtkIAMEPJw=
+1 &lt; Apigw-Requestid: K7JwdgfuoAMEZIg=
 {&quot;name&quot;: &quot;Fiona&quot;, &quot;title&quot;: &quot;Payment&quot;, &quot;amount&quot;: 120.0, &quot;currency&quot;: &quot;USD&quot;, &quot;timestamp&quot;: &quot;2024-05-06T14:00:00Z&quot;, &quot;id&quot;: &quot;txn206&quot;, &quot;message&quot;: &quot;SUCCESS&quot;}
 
 </pre>
@@ -2970,7 +2970,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.174</span>
+  <span class="lead-duration duration">0.190</span>
 
 </div>
 
@@ -2988,7 +2988,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-20" class="collapse collapsable-details">
-        <pre>09:56:50.846 request:
+        <pre>11:23:46.535 request:
 1 &gt; POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Accept: application/json
@@ -2999,13 +2999,13 @@ $(document).ready(function() {
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;transactionId&quot;:&quot;txn207&quot;,&quot;name&quot;:&quot;George&quot;,&quot;title&quot;:&quot;Refund&quot;,&quot;amount&quot;:180,&quot;currency&quot;:&quot;USD&quot;,&quot;timestamp&quot;:&quot;2024-05-07T16:00:00Z&quot;}
 
-09:56:51.019 response time in milliseconds: 172
+11:23:46.724 response time in milliseconds: 187
 1 &lt; 201
-1 &lt; Date: Wed, 21 May 2025 13:56:51 GMT
+1 &lt; Date: Wed, 21 May 2025 15:23:46 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Content-Length: 148
 1 &lt; Connection: keep-alive
-1 &lt; Apigw-Requestid: K69BihggoAMEZ0Q=
+1 &lt; Apigw-Requestid: K7JwfiMYoAMEPog=
 {&quot;name&quot;: &quot;George&quot;, &quot;title&quot;: &quot;Refund&quot;, &quot;amount&quot;: 180.0, &quot;currency&quot;: &quot;USD&quot;, &quot;timestamp&quot;: &quot;2024-05-07T16:00:00Z&quot;, &quot;id&quot;: &quot;txn207&quot;, &quot;message&quot;: &quot;SUCCESS&quot;}
 
 </pre>
@@ -3366,7 +3366,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.199</span>
+  <span class="lead-duration duration">0.175</span>
 
 </div>
 
@@ -3384,7 +3384,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-22" class="collapse collapsable-details">
-        <pre>09:56:51.028 request:
+        <pre>11:23:46.733 request:
 1 &gt; POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Accept: application/json
@@ -3395,13 +3395,13 @@ $(document).ready(function() {
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;transactionId&quot;:&quot;txn208&quot;,&quot;name&quot;:&quot;Hannah&quot;,&quot;title&quot;:&quot;Invoice&quot;,&quot;amount&quot;:220,&quot;currency&quot;:&quot;USD&quot;,&quot;timestamp&quot;:&quot;2024-05-08T10:15:00Z&quot;}
 
-09:56:51.225 response time in milliseconds: 196
+11:23:46.907 response time in milliseconds: 173
 1 &lt; 201
-1 &lt; Date: Wed, 21 May 2025 13:56:51 GMT
+1 &lt; Date: Wed, 21 May 2025 15:23:47 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Content-Length: 149
 1 &lt; Connection: keep-alive
-1 &lt; Apigw-Requestid: K69BkiAsoAMEPkA=
+1 &lt; Apigw-Requestid: K7JwhggwIAMEZIg=
 {&quot;name&quot;: &quot;Hannah&quot;, &quot;title&quot;: &quot;Invoice&quot;, &quot;amount&quot;: 220.0, &quot;currency&quot;: &quot;USD&quot;, &quot;timestamp&quot;: &quot;2024-05-08T10:15:00Z&quot;, &quot;id&quot;: &quot;txn208&quot;, &quot;message&quot;: &quot;SUCCESS&quot;}
 
 </pre>
@@ -3762,7 +3762,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.166</span>
+  <span class="lead-duration duration">0.171</span>
 
 </div>
 
@@ -3780,7 +3780,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-24" class="collapse collapsable-details">
-        <pre>09:56:51.233 request:
+        <pre>11:23:46.915 request:
 1 &gt; POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Accept: application/json
@@ -3791,13 +3791,13 @@ $(document).ready(function() {
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;transactionId&quot;:&quot;txn209&quot;,&quot;name&quot;:&quot;Ian&quot;,&quot;title&quot;:&quot;Payment&quot;,&quot;amount&quot;:140,&quot;currency&quot;:&quot;USD&quot;,&quot;timestamp&quot;:&quot;2024-05-09T09:00:00Z&quot;}
 
-09:56:51.398 response time in milliseconds: 164
+11:23:47.085 response time in milliseconds: 169
 1 &lt; 201
-1 &lt; Date: Wed, 21 May 2025 13:56:51 GMT
+1 &lt; Date: Wed, 21 May 2025 15:23:47 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Content-Length: 146
 1 &lt; Connection: keep-alive
-1 &lt; Apigw-Requestid: K69BmjnLIAMEZKg=
+1 &lt; Apigw-Requestid: K7JwigH1IAMEPvg=
 {&quot;name&quot;: &quot;Ian&quot;, &quot;title&quot;: &quot;Payment&quot;, &quot;amount&quot;: 140.0, &quot;currency&quot;: &quot;USD&quot;, &quot;timestamp&quot;: &quot;2024-05-09T09:00:00Z&quot;, &quot;id&quot;: &quot;txn209&quot;, &quot;message&quot;: &quot;SUCCESS&quot;}
 
 </pre>
@@ -4158,7 +4158,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.197</span>
+  <span class="lead-duration duration">0.173</span>
 
 </div>
 
@@ -4176,7 +4176,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-26" class="collapse collapsable-details">
-        <pre>09:56:51.406 request:
+        <pre>11:23:47.092 request:
 1 &gt; POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Accept: application/json
@@ -4187,13 +4187,13 @@ $(document).ready(function() {
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;transactionId&quot;:&quot;txn210&quot;,&quot;name&quot;:&quot;Jill&quot;,&quot;title&quot;:&quot;Refund&quot;,&quot;amount&quot;:160,&quot;currency&quot;:&quot;USD&quot;,&quot;timestamp&quot;:&quot;2024-05-10T12:00:00Z&quot;}
 
-09:56:51.601 response time in milliseconds: 195
+11:23:47.264 response time in milliseconds: 171
 1 &lt; 201
-1 &lt; Date: Wed, 21 May 2025 13:56:51 GMT
+1 &lt; Date: Wed, 21 May 2025 15:23:47 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Content-Length: 146
 1 &lt; Connection: keep-alive
-1 &lt; Apigw-Requestid: K69Bng2EIAMEPEg=
+1 &lt; Apigw-Requestid: K7Jwkjp1oAMEZkw=
 {&quot;name&quot;: &quot;Jill&quot;, &quot;title&quot;: &quot;Refund&quot;, &quot;amount&quot;: 160.0, &quot;currency&quot;: &quot;USD&quot;, &quot;timestamp&quot;: &quot;2024-05-10T12:00:00Z&quot;, &quot;id&quot;: &quot;txn210&quot;, &quot;message&quot;: &quot;SUCCESS&quot;}
 
 </pre>
@@ -4554,7 +4554,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.191</span>
+  <span class="lead-duration duration">0.173</span>
 
 </div>
 
@@ -4572,7 +4572,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-28" class="collapse collapsable-details">
-        <pre>09:56:51.610 request:
+        <pre>11:23:47.272 request:
 1 &gt; POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Accept: application/json
@@ -4583,13 +4583,13 @@ $(document).ready(function() {
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;transactionId&quot;:&quot;txn211&quot;,&quot;name&quot;:&quot;Kevin&quot;,&quot;title&quot;:&quot;Invoice&quot;,&quot;amount&quot;:240,&quot;currency&quot;:&quot;USD&quot;,&quot;timestamp&quot;:&quot;2024-05-11T11:30:00Z&quot;}
 
-09:56:51.799 response time in milliseconds: 188
+11:23:47.443 response time in milliseconds: 171
 1 &lt; 201
-1 &lt; Date: Wed, 21 May 2025 13:56:51 GMT
+1 &lt; Date: Wed, 21 May 2025 15:23:47 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Content-Length: 148
 1 &lt; Connection: keep-alive
-1 &lt; Apigw-Requestid: K69Bqgb5oAMEPRA=
+1 &lt; Apigw-Requestid: K7JwmjtWoAMEZVg=
 {&quot;name&quot;: &quot;Kevin&quot;, &quot;title&quot;: &quot;Invoice&quot;, &quot;amount&quot;: 240.0, &quot;currency&quot;: &quot;USD&quot;, &quot;timestamp&quot;: &quot;2024-05-11T11:30:00Z&quot;, &quot;id&quot;: &quot;txn211&quot;, &quot;message&quot;: &quot;SUCCESS&quot;}
 
 </pre>
@@ -4721,7 +4721,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; *</span>
   <span class="name">if (!isValidTimestamp(body.timestamp)) karate.fail('Invalid timestamp: ' + body.timestamp)</span>
 
-  <span class="lead-duration duration">0.012</span>
+  <span class="lead-duration duration">0.011</span>
 
 </div>
 
@@ -4950,7 +4950,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.160</span>
+  <span class="lead-duration duration">0.166</span>
 
 </div>
 
@@ -4968,7 +4968,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-30" class="collapse collapsable-details">
-        <pre>09:56:51.820 request:
+        <pre>11:23:47.462 request:
 1 &gt; POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Accept: application/json
@@ -4979,13 +4979,13 @@ $(document).ready(function() {
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;transactionId&quot;:&quot;txn212&quot;,&quot;name&quot;:&quot;Lena&quot;,&quot;title&quot;:&quot;Payment&quot;,&quot;amount&quot;:260,&quot;currency&quot;:&quot;USD&quot;,&quot;timestamp&quot;:&quot;2024-05-12T08:00:00Z&quot;}
 
-09:56:51.979 response time in milliseconds: 158
+11:23:47.626 response time in milliseconds: 163
 1 &lt; 201
-1 &lt; Date: Wed, 21 May 2025 13:56:52 GMT
+1 &lt; Date: Wed, 21 May 2025 15:23:47 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Content-Length: 147
 1 &lt; Connection: keep-alive
-1 &lt; Apigw-Requestid: K69Bsg2ToAMEP7g=
+1 &lt; Apigw-Requestid: K7JwoirSoAMEPHw=
 {&quot;name&quot;: &quot;Lena&quot;, &quot;title&quot;: &quot;Payment&quot;, &quot;amount&quot;: 260.0, &quot;currency&quot;: &quot;USD&quot;, &quot;timestamp&quot;: &quot;2024-05-12T08:00:00Z&quot;, &quot;id&quot;: &quot;txn212&quot;, &quot;message&quot;: &quot;SUCCESS&quot;}
 
 </pre>
@@ -5346,7 +5346,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.193</span>
+  <span class="lead-duration duration">0.179</span>
 
 </div>
 
@@ -5364,7 +5364,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-32" class="collapse collapsable-details">
-        <pre>09:56:51.986 request:
+        <pre>11:23:47.633 request:
 1 &gt; POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Accept: application/json
@@ -5375,13 +5375,13 @@ $(document).ready(function() {
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;transactionId&quot;:&quot;txn213&quot;,&quot;name&quot;:&quot;Mike&quot;,&quot;title&quot;:&quot;Invoice&quot;,&quot;amount&quot;:300,&quot;currency&quot;:&quot;USD&quot;,&quot;timestamp&quot;:&quot;2024-05-13T17:00:00Z&quot;}
 
-09:56:52.178 response time in milliseconds: 191
+11:23:47.811 response time in milliseconds: 176
 1 &lt; 201
-1 &lt; Date: Wed, 21 May 2025 13:56:52 GMT
+1 &lt; Date: Wed, 21 May 2025 15:23:47 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Content-Length: 147
 1 &lt; Connection: keep-alive
-1 &lt; Apigw-Requestid: K69BtirgIAMEPxA=
+1 &lt; Apigw-Requestid: K7Jwqg67oAMEZsw=
 {&quot;name&quot;: &quot;Mike&quot;, &quot;title&quot;: &quot;Invoice&quot;, &quot;amount&quot;: 300.0, &quot;currency&quot;: &quot;USD&quot;, &quot;timestamp&quot;: &quot;2024-05-13T17:00:00Z&quot;, &quot;id&quot;: &quot;txn213&quot;, &quot;message&quot;: &quot;SUCCESS&quot;}
 
 </pre>
@@ -5742,7 +5742,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.174</span>
+  <span class="lead-duration duration">0.152</span>
 
 </div>
 
@@ -5760,7 +5760,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-34" class="collapse collapsable-details">
-        <pre>09:56:52.184 request:
+        <pre>11:23:47.818 request:
 1 &gt; POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Accept: application/json
@@ -5771,13 +5771,13 @@ $(document).ready(function() {
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;transactionId&quot;:&quot;txn214&quot;,&quot;name&quot;:&quot;Nina&quot;,&quot;title&quot;:&quot;Refund&quot;,&quot;amount&quot;:130,&quot;currency&quot;:&quot;USD&quot;,&quot;timestamp&quot;:&quot;2024-05-14T14:30:00Z&quot;}
 
-09:56:52.357 response time in milliseconds: 172
+11:23:47.969 response time in milliseconds: 151
 1 &lt; 201
-1 &lt; Date: Wed, 21 May 2025 13:56:52 GMT
+1 &lt; Date: Wed, 21 May 2025 15:23:48 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Content-Length: 146
 1 &lt; Connection: keep-alive
-1 &lt; Apigw-Requestid: K69Bvg4VoAMEPLA=
+1 &lt; Apigw-Requestid: K7JwrgKpoAMEPvg=
 {&quot;name&quot;: &quot;Nina&quot;, &quot;title&quot;: &quot;Refund&quot;, &quot;amount&quot;: 130.0, &quot;currency&quot;: &quot;USD&quot;, &quot;timestamp&quot;: &quot;2024-05-14T14:30:00Z&quot;, &quot;id&quot;: &quot;txn214&quot;, &quot;message&quot;: &quot;SUCCESS&quot;}
 
 </pre>
@@ -6138,7 +6138,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.177</span>
+  <span class="lead-duration duration">0.170</span>
 
 </div>
 
@@ -6156,7 +6156,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-36" class="collapse collapsable-details">
-        <pre>09:56:52.363 request:
+        <pre>11:23:47.975 request:
 1 &gt; POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Accept: application/json
@@ -6167,13 +6167,13 @@ $(document).ready(function() {
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;transactionId&quot;:&quot;txn215&quot;,&quot;name&quot;:&quot;Owen&quot;,&quot;title&quot;:&quot;Payment&quot;,&quot;amount&quot;:280,&quot;currency&quot;:&quot;USD&quot;,&quot;timestamp&quot;:&quot;2024-05-15T10:20:00Z&quot;}
 
-09:56:52.539 response time in milliseconds: 175
+11:23:48.144 response time in milliseconds: 168
 1 &lt; 201
-1 &lt; Date: Wed, 21 May 2025 13:56:52 GMT
+1 &lt; Date: Wed, 21 May 2025 15:23:48 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Content-Length: 147
 1 &lt; Connection: keep-alive
-1 &lt; Apigw-Requestid: K69Bxio2oAMEZOg=
+1 &lt; Apigw-Requestid: K7JwtgSioAMEZhw=
 {&quot;name&quot;: &quot;Owen&quot;, &quot;title&quot;: &quot;Payment&quot;, &quot;amount&quot;: 280.0, &quot;currency&quot;: &quot;USD&quot;, &quot;timestamp&quot;: &quot;2024-05-15T10:20:00Z&quot;, &quot;id&quot;: &quot;txn215&quot;, &quot;message&quot;: &quot;SUCCESS&quot;}
 
 </pre>
@@ -6534,7 +6534,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.193</span>
+  <span class="lead-duration duration">0.156</span>
 
 </div>
 
@@ -6552,7 +6552,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-38" class="collapse collapsable-details">
-        <pre>09:56:52.545 request:
+        <pre>11:23:48.151 request:
 1 &gt; POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Accept: application/json
@@ -6563,13 +6563,13 @@ $(document).ready(function() {
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;transactionId&quot;:&quot;txn216&quot;,&quot;name&quot;:&quot;Paula&quot;,&quot;title&quot;:&quot;Invoice&quot;,&quot;amount&quot;:190,&quot;currency&quot;:&quot;USD&quot;,&quot;timestamp&quot;:&quot;2024-05-16T09:50:00Z&quot;}
 
-09:56:52.737 response time in milliseconds: 191
+11:23:48.306 response time in milliseconds: 155
 1 &lt; 201
-1 &lt; Date: Wed, 21 May 2025 13:56:52 GMT
+1 &lt; Date: Wed, 21 May 2025 15:23:48 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Content-Length: 148
 1 &lt; Connection: keep-alive
-1 &lt; Apigw-Requestid: K69Bzh0uoAMEPvA=
+1 &lt; Apigw-Requestid: K7JwvhAtoAMEPMQ=
 {&quot;name&quot;: &quot;Paula&quot;, &quot;title&quot;: &quot;Invoice&quot;, &quot;amount&quot;: 190.0, &quot;currency&quot;: &quot;USD&quot;, &quot;timestamp&quot;: &quot;2024-05-16T09:50:00Z&quot;, &quot;id&quot;: &quot;txn216&quot;, &quot;message&quot;: &quot;SUCCESS&quot;}
 
 </pre>
@@ -6930,7 +6930,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.176</span>
+  <span class="lead-duration duration">0.178</span>
 
 </div>
 
@@ -6948,7 +6948,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-40" class="collapse collapsable-details">
-        <pre>09:56:52.744 request:
+        <pre>11:23:48.313 request:
 1 &gt; POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Accept: application/json
@@ -6959,13 +6959,13 @@ $(document).ready(function() {
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;transactionId&quot;:&quot;txn217&quot;,&quot;name&quot;:&quot;Quinn&quot;,&quot;title&quot;:&quot;Refund&quot;,&quot;amount&quot;:110,&quot;currency&quot;:&quot;USD&quot;,&quot;timestamp&quot;:&quot;2024-05-17T13:40:00Z&quot;}
 
-09:56:52.919 response time in milliseconds: 174
+11:23:48.490 response time in milliseconds: 176
 1 &lt; 201
-1 &lt; Date: Wed, 21 May 2025 13:56:53 GMT
+1 &lt; Date: Wed, 21 May 2025 15:23:48 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Content-Length: 147
 1 &lt; Connection: keep-alive
-1 &lt; Apigw-Requestid: K69B1ivgoAMEZqg=
+1 &lt; Apigw-Requestid: K7JwwgK8oAMEZFQ=
 {&quot;name&quot;: &quot;Quinn&quot;, &quot;title&quot;: &quot;Refund&quot;, &quot;amount&quot;: 110.0, &quot;currency&quot;: &quot;USD&quot;, &quot;timestamp&quot;: &quot;2024-05-17T13:40:00Z&quot;, &quot;id&quot;: &quot;txn217&quot;, &quot;message&quot;: &quot;SUCCESS&quot;}
 
 </pre>
@@ -7326,7 +7326,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.195</span>
+  <span class="lead-duration duration">0.188</span>
 
 </div>
 
@@ -7344,7 +7344,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-42" class="collapse collapsable-details">
-        <pre>09:56:52.926 request:
+        <pre>11:23:48.497 request:
 1 &gt; POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Accept: application/json
@@ -7355,13 +7355,13 @@ $(document).ready(function() {
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;transactionId&quot;:&quot;txn218&quot;,&quot;name&quot;:&quot;Rachel&quot;,&quot;title&quot;:&quot;Payment&quot;,&quot;amount&quot;:210,&quot;currency&quot;:&quot;USD&quot;,&quot;timestamp&quot;:&quot;2024-05-18T15:15:00Z&quot;}
 
-09:56:53.119 response time in milliseconds: 192
+11:23:48.684 response time in milliseconds: 187
 1 &lt; 201
-1 &lt; Date: Wed, 21 May 2025 13:56:53 GMT
+1 &lt; Date: Wed, 21 May 2025 15:23:48 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Content-Length: 149
 1 &lt; Connection: keep-alive
-1 &lt; Apigw-Requestid: K69B3hceIAMEP_Q=
+1 &lt; Apigw-Requestid: K7Jwyh8TIAMEZ0Q=
 {&quot;name&quot;: &quot;Rachel&quot;, &quot;title&quot;: &quot;Payment&quot;, &quot;amount&quot;: 210.0, &quot;currency&quot;: &quot;USD&quot;, &quot;timestamp&quot;: &quot;2024-05-18T15:15:00Z&quot;, &quot;id&quot;: &quot;txn218&quot;, &quot;message&quot;: &quot;SUCCESS&quot;}
 
 </pre>
@@ -7722,7 +7722,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.174</span>
+  <span class="lead-duration duration">0.177</span>
 
 </div>
 
@@ -7740,7 +7740,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-44" class="collapse collapsable-details">
-        <pre>09:56:53.126 request:
+        <pre>11:23:48.690 request:
 1 &gt; POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Accept: application/json
@@ -7751,13 +7751,13 @@ $(document).ready(function() {
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;transactionId&quot;:&quot;txn219&quot;,&quot;name&quot;:&quot;Steve&quot;,&quot;title&quot;:&quot;Invoice&quot;,&quot;amount&quot;:270,&quot;currency&quot;:&quot;USD&quot;,&quot;timestamp&quot;:&quot;2024-05-19T16:25:00Z&quot;}
 
-09:56:53.298 response time in milliseconds: 172
+11:23:48.866 response time in milliseconds: 175
 1 &lt; 201
-1 &lt; Date: Wed, 21 May 2025 13:56:53 GMT
+1 &lt; Date: Wed, 21 May 2025 15:23:48 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Content-Length: 148
 1 &lt; Connection: keep-alive
-1 &lt; Apigw-Requestid: K69B5jk2oAMEZDQ=
+1 &lt; Apigw-Requestid: K7Jw0g4iIAMEP4w=
 {&quot;name&quot;: &quot;Steve&quot;, &quot;title&quot;: &quot;Invoice&quot;, &quot;amount&quot;: 270.0, &quot;currency&quot;: &quot;USD&quot;, &quot;timestamp&quot;: &quot;2024-05-19T16:25:00Z&quot;, &quot;id&quot;: &quot;txn219&quot;, &quot;message&quot;: &quot;SUCCESS&quot;}
 
 </pre>
@@ -8136,7 +8136,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-46" class="collapse collapsable-details">
-        <pre>09:56:53.305 request:
+        <pre>11:23:48.872 request:
 1 &gt; POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Accept: application/json
@@ -8147,13 +8147,13 @@ $(document).ready(function() {
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;transactionId&quot;:&quot;txn220&quot;,&quot;name&quot;:&quot;Tina&quot;,&quot;title&quot;:&quot;Refund&quot;,&quot;amount&quot;:170,&quot;currency&quot;:&quot;USD&quot;,&quot;timestamp&quot;:&quot;2024-05-20T12:05:00Z&quot;}
 
-09:56:53.478 response time in milliseconds: 172
+11:23:49.045 response time in milliseconds: 172
 1 &lt; 201
-1 &lt; Date: Wed, 21 May 2025 13:56:53 GMT
+1 &lt; Date: Wed, 21 May 2025 15:23:49 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Content-Length: 146
 1 &lt; Connection: keep-alive
-1 &lt; Apigw-Requestid: K69B6i0yoAMEZEA=
+1 &lt; Apigw-Requestid: K7Jw2gYuoAMEPqQ=
 {&quot;name&quot;: &quot;Tina&quot;, &quot;title&quot;: &quot;Refund&quot;, &quot;amount&quot;: 170.0, &quot;currency&quot;: &quot;USD&quot;, &quot;timestamp&quot;: &quot;2024-05-20T12:05:00Z&quot;, &quot;id&quot;: &quot;txn220&quot;, &quot;message&quot;: &quot;SUCCESS&quot;}
 
 </pre>
@@ -8514,7 +8514,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.175</span>
+  <span class="lead-duration duration">0.155</span>
 
 </div>
 
@@ -8532,7 +8532,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-48" class="collapse collapsable-details">
-        <pre>09:56:53.483 request:
+        <pre>11:23:49.051 request:
 1 &gt; POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Accept: application/json
@@ -8543,13 +8543,13 @@ $(document).ready(function() {
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;transactionId&quot;:&quot;txn221&quot;,&quot;name&quot;:&quot;Uma&quot;,&quot;title&quot;:&quot;Payment&quot;,&quot;amount&quot;:310,&quot;currency&quot;:&quot;USD&quot;,&quot;timestamp&quot;:&quot;2024-05-21T08:10:00Z&quot;}
 
-09:56:53.657 response time in milliseconds: 173
+11:23:49.205 response time in milliseconds: 154
 1 &lt; 201
-1 &lt; Date: Wed, 21 May 2025 13:56:53 GMT
+1 &lt; Date: Wed, 21 May 2025 15:23:49 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Content-Length: 146
 1 &lt; Connection: keep-alive
-1 &lt; Apigw-Requestid: K69B8iN-oAMEPTA=
+1 &lt; Apigw-Requestid: K7Jw4hJMoAMEZiw=
 {&quot;name&quot;: &quot;Uma&quot;, &quot;title&quot;: &quot;Payment&quot;, &quot;amount&quot;: 310.0, &quot;currency&quot;: &quot;USD&quot;, &quot;timestamp&quot;: &quot;2024-05-21T08:10:00Z&quot;, &quot;id&quot;: &quot;txn221&quot;, &quot;message&quot;: &quot;SUCCESS&quot;}
 
 </pre>
@@ -8910,7 +8910,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.175</span>
+  <span class="lead-duration duration">0.194</span>
 
 </div>
 
@@ -8928,7 +8928,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-50" class="collapse collapsable-details">
-        <pre>09:56:53.663 request:
+        <pre>11:23:49.212 request:
 1 &gt; POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Accept: application/json
@@ -8939,13 +8939,13 @@ $(document).ready(function() {
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;transactionId&quot;:&quot;txn222&quot;,&quot;name&quot;:&quot;Victor&quot;,&quot;title&quot;:&quot;Invoice&quot;,&quot;amount&quot;:135,&quot;currency&quot;:&quot;USD&quot;,&quot;timestamp&quot;:&quot;2024-05-22T11:45:00Z&quot;}
 
-09:56:53.837 response time in milliseconds: 173
+11:23:49.404 response time in milliseconds: 191
 1 &lt; 201
-1 &lt; Date: Wed, 21 May 2025 13:56:53 GMT
+1 &lt; Date: Wed, 21 May 2025 15:23:49 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Content-Length: 149
 1 &lt; Connection: keep-alive
-1 &lt; Apigw-Requestid: K69B-hqxoAMEP2g=
+1 &lt; Apigw-Requestid: K7Jw5hh1IAMEZ3g=
 {&quot;name&quot;: &quot;Victor&quot;, &quot;title&quot;: &quot;Invoice&quot;, &quot;amount&quot;: 135.0, &quot;currency&quot;: &quot;USD&quot;, &quot;timestamp&quot;: &quot;2024-05-22T11:45:00Z&quot;, &quot;id&quot;: &quot;txn222&quot;, &quot;message&quot;: &quot;SUCCESS&quot;}
 
 </pre>
@@ -9324,7 +9324,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-52" class="collapse collapsable-details">
-        <pre>09:56:53.843 request:
+        <pre>11:23:49.410 request:
 1 &gt; POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Accept: application/json
@@ -9335,13 +9335,13 @@ $(document).ready(function() {
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;transactionId&quot;:&quot;txn223&quot;,&quot;name&quot;:&quot;Wendy&quot;,&quot;title&quot;:&quot;Refund&quot;,&quot;amount&quot;:145,&quot;currency&quot;:&quot;USD&quot;,&quot;timestamp&quot;:&quot;2024-05-23T13:30:00Z&quot;}
 
-09:56:54.018 response time in milliseconds: 174
+11:23:49.585 response time in milliseconds: 174
 1 &lt; 201
-1 &lt; Date: Wed, 21 May 2025 13:56:54 GMT
+1 &lt; Date: Wed, 21 May 2025 15:23:49 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Content-Length: 147
 1 &lt; Connection: keep-alive
-1 &lt; Apigw-Requestid: K69CAiyyoAMEZqg=
+1 &lt; Apigw-Requestid: K7Jw7hKUIAMEZiw=
 {&quot;name&quot;: &quot;Wendy&quot;, &quot;title&quot;: &quot;Refund&quot;, &quot;amount&quot;: 145.0, &quot;currency&quot;: &quot;USD&quot;, &quot;timestamp&quot;: &quot;2024-05-23T13:30:00Z&quot;, &quot;id&quot;: &quot;txn223&quot;, &quot;message&quot;: &quot;SUCCESS&quot;}
 
 </pre>
@@ -9702,7 +9702,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.175</span>
+  <span class="lead-duration duration">0.174</span>
 
 </div>
 
@@ -9720,7 +9720,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-54" class="collapse collapsable-details">
-        <pre>09:56:54.024 request:
+        <pre>11:23:49.591 request:
 1 &gt; POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Accept: application/json
@@ -9731,13 +9731,13 @@ $(document).ready(function() {
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;transactionId&quot;:&quot;txn224&quot;,&quot;name&quot;:&quot;Xander&quot;,&quot;title&quot;:&quot;Payment&quot;,&quot;amount&quot;:295,&quot;currency&quot;:&quot;USD&quot;,&quot;timestamp&quot;:&quot;2024-05-24T10:50:00Z&quot;}
 
-09:56:54.199 response time in milliseconds: 174
+11:23:49.765 response time in milliseconds: 173
 1 &lt; 201
-1 &lt; Date: Wed, 21 May 2025 13:56:54 GMT
+1 &lt; Date: Wed, 21 May 2025 15:23:49 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Content-Length: 149
 1 &lt; Connection: keep-alive
-1 &lt; Apigw-Requestid: K69CCh2qIAMEP9w=
+1 &lt; Apigw-Requestid: K7Jw9gjUIAMEZKw=
 {&quot;name&quot;: &quot;Xander&quot;, &quot;title&quot;: &quot;Payment&quot;, &quot;amount&quot;: 295.0, &quot;currency&quot;: &quot;USD&quot;, &quot;timestamp&quot;: &quot;2024-05-24T10:50:00Z&quot;, &quot;id&quot;: &quot;txn224&quot;, &quot;message&quot;: &quot;SUCCESS&quot;}
 
 </pre>
@@ -10098,7 +10098,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.172</span>
+  <span class="lead-duration duration">0.195</span>
 
 </div>
 
@@ -10116,7 +10116,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-56" class="collapse collapsable-details">
-        <pre>09:56:54.205 request:
+        <pre>11:23:49.770 request:
 1 &gt; POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Accept: application/json
@@ -10127,13 +10127,13 @@ $(document).ready(function() {
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;transactionId&quot;:&quot;txn225&quot;,&quot;name&quot;:&quot;Yara&quot;,&quot;title&quot;:&quot;Invoice&quot;,&quot;amount&quot;:275,&quot;currency&quot;:&quot;USD&quot;,&quot;timestamp&quot;:&quot;2024-05-25T09:15:00Z&quot;}
 
-09:56:54.376 response time in milliseconds: 171
+11:23:49.964 response time in milliseconds: 193
 1 &lt; 201
-1 &lt; Date: Wed, 21 May 2025 13:56:54 GMT
+1 &lt; Date: Wed, 21 May 2025 15:23:50 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Content-Length: 147
 1 &lt; Connection: keep-alive
-1 &lt; Apigw-Requestid: K69CDijjIAMEZZw=
+1 &lt; Apigw-Requestid: K7Jw_hQjIAMEPPg=
 {&quot;name&quot;: &quot;Yara&quot;, &quot;title&quot;: &quot;Invoice&quot;, &quot;amount&quot;: 275.0, &quot;currency&quot;: &quot;USD&quot;, &quot;timestamp&quot;: &quot;2024-05-25T09:15:00Z&quot;, &quot;id&quot;: &quot;txn225&quot;, &quot;message&quot;: &quot;SUCCESS&quot;}
 
 </pre>
