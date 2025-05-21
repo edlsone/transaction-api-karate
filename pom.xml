@@ -89,7 +89,6 @@
                       <jsonFiles>
                         <param>${project.build.directory}/karate-reports/karate.json</param>
                       </jsonFiles>
-                      <parallelTesting>false</parallelTesting>
                     </configuration>
                   </execution>
                 </executions>
