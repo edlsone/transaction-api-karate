@@ -84,9 +84,9 @@
                       <projectName>Karate Test Results</projectName>
                       <outputDirectory>${project.build.directory}/cucumber-html-reports</outputDirectory>
                       <jsonFiles>
-                        <param>${project.build.directory}/karate-reports/karate.json</param>
+                        <jsonFile>${project.build.directory}/karate-reports/karate.json</jsonFile>
                       </jsonFiles>
-                    </configuration>
+                      <reportTargetDirectory>${project.build.directory}/cucumber-reports</reportTargetDirectory>                    </configuration>
                   </execution>
                 </executions>
               </plugin>
