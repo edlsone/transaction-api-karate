@@ -66,6 +66,9 @@
                     <excludes>
                         <exclude>**/TransactionsRunnerTest.java</exclude>
                     </excludes>
+                    <systemPropertyVariables>
+                        <karate.options>--plugin json:target/cucumber-report-json/</karate.options>
+                    </systemPropertyVariables>
                 </configuration>
             </plugin>
             
