@@ -2,23 +2,42 @@ package tests;
 
 import com.intuit.karate.Results;
 import com.intuit.karate.Runner;
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 
+import net.masterthought.cucumber.Configuration;
+import net.masterthought.cucumber.ReportBuilder;
+import org.apache.commons.io.FileUtils;
 
 @TestMethodOrder(OrderAnnotation.class)
 class ParallelRunnerTest {
+    
+    public static void generateReport(String karateOutputPath) {
+        Collection<File> jsonFiles = FileUtils.listFiles(new File(karateOutputPath), new String[]{"json"}, true);
+        List<String> jsonPaths = new ArrayList<>(jsonFiles.size());
+        jsonFiles.forEach(file -> jsonPaths.add(file.getAbsolutePath()));
+        Configuration config = new Configuration(new File("target"),
+                "com.rkdevblog.karate.employee");
+        ReportBuilder reportBuilder = new ReportBuilder(jsonPaths, config);
+        reportBuilder.generateReports();
+    }
 
     @Test
     @Order(1)       
     void createTransactions() {
         Results results = Runner.path("classpath:tests/transactions/01-create-transactions.feature")
                 .outputCucumberJson(true)
-                .parallel(0);
-        assertEquals(0, results.getFailCount(), results.getErrorMessages());
+                .karateEnv("dev")
+                .parallel(1);
+                generateReport(results.getReportDir());
+                assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
     
     @Test
@@ -26,7 +45,7 @@ class ParallelRunnerTest {
     void createTransactionsBad() {
         Results results = Runner.path("classpath:tests/transactions/02-create-transactions-bad.feature")
                 .outputCucumberJson(true)
-                .parallel(0);
+                .parallel(1);
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
     
@@ -35,7 +54,7 @@ class ParallelRunnerTest {
     void getAllTransactions() {
         Results results = Runner.path("classpath:tests/transactions/03-get-all-transactions.feature")
                 .outputCucumberJson(true)
-                .parallel(0);
+                .parallel(1);
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
     
@@ -44,7 +63,7 @@ class ParallelRunnerTest {
     void getTransactionsById() {
         Results results = Runner.path("classpath:tests/transactions/04-get-transactions-by-id.feature")
                 .outputCucumberJson(true)
-                .parallel(0);
+                .parallel(1);
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
     
@@ -53,7 +72,7 @@ class ParallelRunnerTest {
     void getTransactionsByIdBad() {
         Results results = Runner.path("classpath:tests/transactions/05-get-transactions-by-id-bad.feature")
                 .outputCucumberJson(true)
-                .parallel(0);
+                .parallel(1);
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
     
@@ -62,7 +81,7 @@ class ParallelRunnerTest {
     void updateTransactions() {
         Results results = Runner.path("classpath:tests/transactions/06-update-transactions.feature")
                 .outputCucumberJson(true)
-                .parallel(0);
+                .parallel(1);
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
     
@@ -71,7 +90,7 @@ class ParallelRunnerTest {
     void updateTransactionsBad() {
         Results results = Runner.path("classpath:tests/transactions/07-update-transactions-bad.feature")
                 .outputCucumberJson(true)
-                .parallel(0);
+                .parallel(1);
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
     
@@ -80,7 +99,7 @@ class ParallelRunnerTest {
     void deleteTransactionsFail() {
         Results results = Runner.path("classpath:tests/transactions/08-delete-transactions-bad.feature")
                 .outputCucumberJson(true)
-                .parallel(0);
+                .parallel(1);
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
     
@@ -89,7 +108,7 @@ class ParallelRunnerTest {
     void deleteTransactions() {
         Results results = Runner.path("classpath:tests/transactions/09-delete-transactions.feature")
                 .outputCucumberJson(true)
-                .parallel(0);
+                .parallel(1);
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
 

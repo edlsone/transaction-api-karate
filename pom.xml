@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
  
     <groupId>io.karatelabs</groupId>
-    <artifactId>karate-template</artifactId>
+    <artifactId>transaction-api</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
  
@@ -59,7 +59,10 @@
                 <version>${maven.surefire.version}</version>
                 <configuration>
                     <argLine>-Dfile.encoding=UTF-8</argLine>
-                    <include>**/*Test.java</include>
+                    <includes>
+                        <include>**/*Test.java</include>
+                        <include>**/ParallelRunnerTest.java</include>
+                    </includes> 
                     <excludes>
                         <exclude>**/TransactionsRunnerTest.java</exclude>
                     </excludes>
@@ -71,21 +74,24 @@
                 <artifactId>maven-cucumber-reporting</artifactId>
                 <version>5.8.5</version>
                 <executions>
-                    <execution>
-                        <id>generate-cucumber-html-reports</id>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>generate</goal>
-                        </goals>
-                        <configuration>
-                            <projectName>Transaction API Tests</projectName>
-                            <outputDirectory>${project.build.directory}/cucumber-html-reports</outputDirectory>
-                            <cucumberOutput>${project.build.directory}/karate-reports/cucumber-json-report.json</cucumberOutput>
-                        </configuration>
-                    </execution>
+                  <execution>
+                    <id>generate-cucumber-report</id>
+                    <phase>verify</phase>
+                    <goals>
+                      <goal>generate</goal>
+                    </goals>
+                    <configuration>
+                      <projectName>Karate Test Results</projectName>
+                      <outputDirectory>${project.build.directory}/cucumber-html-reports</outputDirectory>
+                      <jsonFiles>
+                        <param>${project.build.directory}/karate-reports/karate.json</param>
+                      </jsonFiles>
+                      <parallelTesting>false</parallelTesting>
+                    </configuration>
+                  </execution>
                 </executions>
-        </plugin>     
-        
+              </plugin>
+     
         </plugins>
         
  

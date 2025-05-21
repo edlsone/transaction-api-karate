@@ -1,0 +1,3127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="tests.ParallelRunnerTest" time="26.414" tests="9" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="23"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/edls/NetBeansProjects/transaction-api/target/test-classes:/Users/edls/NetBeansProjects/transaction-api/target/classes:/Users/edls/.m2/repository/io/karatelabs/karate-junit5/1.5.1/karate-junit5-1.5.1.jar:/Users/edls/.m2/repository/io/karatelabs/karate-core/1.5.1/karate-core-1.5.1.jar:/Users/edls/.m2/repository/org/graalvm/js/js-scriptengine/24.0.0/js-scriptengine-24.0.0.jar:/Users/edls/.m2/repository/org/graalvm/polyglot/polyglot/24.0.0/polyglot-24.0.0.jar:/Users/edls/.m2/repository/org/graalvm/sdk/collections/24.0.0/collections-24.0.0.jar:/Users/edls/.m2/repository/org/graalvm/sdk/nativeimage/24.0.0/nativeimage-24.0.0.jar:/Users/edls/.m2/repository/org/graalvm/sdk/word/24.0.0/word-24.0.0.jar:/Users/edls/.m2/repository/org/graalvm/js/js-language/24.0.0/js-language-24.0.0.jar:/Users/edls/.m2/repository/org/graalvm/regex/regex/24.0.0/regex-24.0.0.jar:/Users/edls/.m2/repository/org/graalvm/truffle/truffle-api/24.0.0/truffle-api-24.0.0.jar:/Users/edls/.m2/repository/org/graalvm/shadowed/icu4j/24.0.0/icu4j-24.0.0.jar:/Users/edls/.m2/repository/org/thymeleaf/thymeleaf/3.1.2.RELEASE/thymeleaf-3.1.2.RELEASE.jar:/Users/edls/.m2/repository/ognl/ognl/3.3.4/ognl-3.3.4.jar:/Users/edls/.m2/repository/org/javassist/javassist/3.29.0-GA/javassist-3.29.0-GA.jar:/Users/edls/.m2/repository/org/attoparser/attoparser/2.0.7.RELEASE/attoparser-2.0.7.RELEASE.jar:/Users/edls/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar:/Users/edls/.m2/repository/com/linecorp/armeria/armeria/1.31.3/armeria-1.31.3.jar:/Users/edls/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.18.1/jackson-datatype-jdk8-2.18.1.jar:/Users/edls/.m2/repository/io/micrometer/micrometer-core/1.13.6/micrometer-core-1.13.6.jar:/Users/edls/.m2/repository/io/micrometer/micrometer-commons/1.13.6/micrometer-commons-1.13.6.jar:/Users/edls/.m2/repository/io/micrometer/micrometer-observation/1.13.6/micrometer-observation-1.13.6.jar:/Users/edls/.m2/repository/org/hdrhistogram/HdrHistogram/2.2.2/HdrHistogram-2.2.2.jar:/Users/edls/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:/Users/edls/.m2/repository/io/netty/netty-transport/4.1.115.Final/netty-transport-4.1.115.Final.jar:/Users/edls/.m2/repository/io/netty/netty-common/4.1.115.Final/netty-common-4.1.115.Final.jar:/Users/edls/.m2/repository/io/netty/netty-buffer/4.1.115.Final/netty-buffer-4.1.115.Final.jar:/Users/edls/.m2/repository/io/netty/netty-resolver/4.1.115.Final/netty-resolver-4.1.115.Final.jar:/Users/edls/.m2/repository/io/netty/netty-codec-haproxy/4.1.115.Final/netty-codec-haproxy-4.1.115.Final.jar:/Users/edls/.m2/repository/io/netty/netty-codec/4.1.115.Final/netty-codec-4.1.115.Final.jar:/Users/edls/.m2/repository/io/netty/netty-codec-http2/4.1.115.Final/netty-codec-http2-4.1.115.Final.jar:/Users/edls/.m2/repository/io/netty/netty-handler/4.1.115.Final/netty-handler-4.1.115.Final.jar:/Users/edls/.m2/repository/io/netty/netty-codec-http/4.1.115.Final/netty-codec-http-4.1.115.Final.jar:/Users/edls/.m2/repository/io/netty/netty-resolver-dns/4.1.115.Final/netty-resolver-dns-4.1.115.Final.jar:/Users/edls/.m2/repository/io/netty/netty-codec-dns/4.1.115.Final/netty-codec-dns-4.1.115.Final.jar:/Users/edls/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.115.Final/netty-transport-native-unix-common-4.1.115.Final-linux-x86_64.jar:/Users/edls/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.115.Final/netty-transport-native-unix-common-4.1.115.Final-linux-aarch_64.jar:/Users/edls/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.115.Final/netty-transport-native-unix-common-4.1.115.Final-osx-x86_64.jar:/Users/edls/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.115.Final/netty-transport-native-unix-common-4.1.115.Final-osx-aarch_64.jar:/Users/edls/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/Users/edls/.m2/repository/io/netty/netty-handler-proxy/4.1.115.Final/netty-handler-proxy-4.1.115.Final.jar:/Users/edls/.m2/repository/io/netty/netty-codec-socks/4.1.115.Final/netty-codec-socks-4.1.115.Final.jar:/Users/edls/.m2/repository/io/netty/netty-transport-native-epoll/4.1.115.Final/netty-transport-native-epoll-4.1.115.Final-linux-x86_64.jar:/Users/edls/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.115.Final/netty-transport-native-unix-common-4.1.115.Final.jar:/Users/edls/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.115.Final/netty-transport-classes-epoll-4.1.115.Final.jar:/Users/edls/.m2/repository/io/netty/netty-transport-native-epoll/4.1.115.Final/netty-transport-native-epoll-4.1.115.Final-linux-aarch_64.jar:/Users/edls/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.115.Final/netty-transport-native-kqueue-4.1.115.Final-osx-x86_64.jar:/Users/edls/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.115.Final/netty-transport-classes-kqueue-4.1.115.Final.jar:/Users/edls/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.115.Final/netty-resolver-dns-native-macos-4.1.115.Final-osx-x86_64.jar:/Users/edls/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.115.Final/netty-resolver-dns-classes-macos-4.1.115.Final.jar:/Users/edls/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.115.Final/netty-transport-native-kqueue-4.1.115.Final-osx-aarch_64.jar:/Users/edls/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.115.Final/netty-resolver-dns-native-macos-4.1.115.Final-osx-aarch_64.jar:/Users/edls/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.69.Final/netty-tcnative-boringssl-static-2.0.69.Final-linux-x86_64.jar:/Users/edls/.m2/repository/io/netty/netty-tcnative-classes/2.0.69.Final/netty-tcnative-classes-2.0.69.Final.jar:/Users/edls/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.69.Final/netty-tcnative-boringssl-static-2.0.69.Final-linux-aarch_64.jar:/Users/edls/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.69.Final/netty-tcnative-boringssl-static-2.0.69.Final-osx-x86_64.jar:/Users/edls/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.69.Final/netty-tcnative-boringssl-static-2.0.69.Final-osx-aarch_64.jar:/Users/edls/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.69.Final/netty-tcnative-boringssl-static-2.0.69.Final-windows-x86_64.jar:/Users/edls/.m2/repository/com/aayushatharva/brotli4j/brotli4j/1.17.0/brotli4j-1.17.0.jar:/Users/edls/.m2/repository/com/aayushatharva/brotli4j/service/1.17.0/service-1.17.0.jar:/Users/edls/.m2/repository/com/aayushatharva/brotli4j/native-osx-x86_64/1.17.0/native-osx-x86_64-1.17.0.jar:/Users/edls/.m2/repository/org/apache/httpcomponents/httpclient/4.5.14/httpclient-4.5.14.jar:/Users/edls/.m2/repository/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar:/Users/edls/.m2/repository/commons-codec/commons-codec/1.16.1/commons-codec-1.16.1.jar:/Users/edls/.m2/repository/ch/qos/logback/logback-classic/1.5.4/logback-classic-1.5.4.jar:/Users/edls/.m2/repository/ch/qos/logback/logback-core/1.5.4/logback-core-1.5.4.jar:/Users/edls/.m2/repository/org/slf4j/jcl-over-slf4j/2.0.12/jcl-over-slf4j-2.0.12.jar:/Users/edls/.m2/repository/org/slf4j/slf4j-api/2.0.12/slf4j-api-2.0.12.jar:/Users/edls/.m2/repository/org/antlr/antlr4-runtime/4.13.1/antlr4-runtime-4.13.1.jar:/Users/edls/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/edls/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/Users/edls/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/Users/edls/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/Users/edls/.m2/repository/org/yaml/snakeyaml/2.3/snakeyaml-2.3.jar:/Users/edls/.m2/repository/de/siegmar/fastcsv/3.4.0/fastcsv-3.4.0.jar:/Users/edls/.m2/repository/info/picocli/picocli/4.7.6/picocli-4.7.6.jar:/Users/edls/.m2/repository/io/github/classgraph/classgraph/4.8.179/classgraph-4.8.179.jar:/Users/edls/.m2/repository/io/github/t12y/resemble/1.1.0/resemble-1.1.0.jar:/Users/edls/.m2/repository/io/github/t12y/ssim/1.0.0/ssim-1.0.0.jar:/Users/edls/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/edls/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/edls/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/edls/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/edls/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/edls/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/Users/edls/.m2/repository/net/masterthought/cucumber-reporting/5.7.0/cucumber-reporting-5.7.0.jar:/Users/edls/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.0/jackson-databind-2.13.0.jar:/Users/edls/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.0/jackson-annotations-2.13.0.jar:/Users/edls/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.0/jackson-core-2.13.0.jar:/Users/edls/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.0/jackson-datatype-jsr310-2.13.0.jar:/Users/edls/.m2/repository/org/apache/velocity/velocity-engine-core/2.3/velocity-engine-core-2.3.jar:/Users/edls/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/edls/.m2/repository/joda-time/joda-time/2.10.10/joda-time-2.10.10.jar:/Users/edls/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/edls/.m2/repository/commons-io/commons-io/2.7/commons-io-2.7.jar:/Users/edls/.m2/repository/org/codehaus/plexus/plexus-utils/3.3.0/plexus-utils-3.3.0.jar:/Users/edls/.m2/repository/org/jsoup/jsoup/1.14.2/jsoup-1.14.2.jar:/Users/edls/.m2/repository/com/google/guava/guava/30.1.1-jre/guava-30.1.1-jre.jar:/Users/edls/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/edls/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/edls/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/edls/.m2/repository/org/checkerframework/checker-qual/3.8.0/checker-qual-3.8.0.jar:/Users/edls/.m2/repository/com/google/errorprone/error_prone_annotations/2.5.1/error_prone_annotations-2.5.1.jar:/Users/edls/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/edls/.m2/repository/com/googlecode/owasp-java-html-sanitizer/owasp-java-html-sanitizer/20211018.2/owasp-java-html-sanitizer-20211018.2.jar:/Users/edls/.m2/repository/commons-configuration/commons-configuration/1.10/commons-configuration-1.10.jar:/Users/edls/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/edls/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="23"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-23.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/edls/NetBeansProjects/transaction-api/target/surefire/surefirebooter-20250520220000985_3.jar /Users/edls/NetBeansProjects/transaction-api/target/surefire 2025-05-20T22-00-00_904-jvmRun1 surefire-20250520220000985_1tmp surefire_0-20250520220000985_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="tests.ParallelRunnerTest"/>
+    <property name="surefire.test.class.path" value="/Users/edls/NetBeansProjects/transaction-api/target/test-classes:/Users/edls/NetBeansProjects/transaction-api/target/classes:/Users/edls/.m2/repository/io/karatelabs/karate-junit5/1.5.1/karate-junit5-1.5.1.jar:/Users/edls/.m2/repository/io/karatelabs/karate-core/1.5.1/karate-core-1.5.1.jar:/Users/edls/.m2/repository/org/graalvm/js/js-scriptengine/24.0.0/js-scriptengine-24.0.0.jar:/Users/edls/.m2/repository/org/graalvm/polyglot/polyglot/24.0.0/polyglot-24.0.0.jar:/Users/edls/.m2/repository/org/graalvm/sdk/collections/24.0.0/collections-24.0.0.jar:/Users/edls/.m2/repository/org/graalvm/sdk/nativeimage/24.0.0/nativeimage-24.0.0.jar:/Users/edls/.m2/repository/org/graalvm/sdk/word/24.0.0/word-24.0.0.jar:/Users/edls/.m2/repository/org/graalvm/js/js-language/24.0.0/js-language-24.0.0.jar:/Users/edls/.m2/repository/org/graalvm/regex/regex/24.0.0/regex-24.0.0.jar:/Users/edls/.m2/repository/org/graalvm/truffle/truffle-api/24.0.0/truffle-api-24.0.0.jar:/Users/edls/.m2/repository/org/graalvm/shadowed/icu4j/24.0.0/icu4j-24.0.0.jar:/Users/edls/.m2/repository/org/thymeleaf/thymeleaf/3.1.2.RELEASE/thymeleaf-3.1.2.RELEASE.jar:/Users/edls/.m2/repository/ognl/ognl/3.3.4/ognl-3.3.4.jar:/Users/edls/.m2/repository/org/javassist/javassist/3.29.0-GA/javassist-3.29.0-GA.jar:/Users/edls/.m2/repository/org/attoparser/attoparser/2.0.7.RELEASE/attoparser-2.0.7.RELEASE.jar:/Users/edls/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar:/Users/edls/.m2/repository/com/linecorp/armeria/armeria/1.31.3/armeria-1.31.3.jar:/Users/edls/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.18.1/jackson-datatype-jdk8-2.18.1.jar:/Users/edls/.m2/repository/io/micrometer/micrometer-core/1.13.6/micrometer-core-1.13.6.jar:/Users/edls/.m2/repository/io/micrometer/micrometer-commons/1.13.6/micrometer-commons-1.13.6.jar:/Users/edls/.m2/repository/io/micrometer/micrometer-observation/1.13.6/micrometer-observation-1.13.6.jar:/Users/edls/.m2/repository/org/hdrhistogram/HdrHistogram/2.2.2/HdrHistogram-2.2.2.jar:/Users/edls/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:/Users/edls/.m2/repository/io/netty/netty-transport/4.1.115.Final/netty-transport-4.1.115.Final.jar:/Users/edls/.m2/repository/io/netty/netty-common/4.1.115.Final/netty-common-4.1.115.Final.jar:/Users/edls/.m2/repository/io/netty/netty-buffer/4.1.115.Final/netty-buffer-4.1.115.Final.jar:/Users/edls/.m2/repository/io/netty/netty-resolver/4.1.115.Final/netty-resolver-4.1.115.Final.jar:/Users/edls/.m2/repository/io/netty/netty-codec-haproxy/4.1.115.Final/netty-codec-haproxy-4.1.115.Final.jar:/Users/edls/.m2/repository/io/netty/netty-codec/4.1.115.Final/netty-codec-4.1.115.Final.jar:/Users/edls/.m2/repository/io/netty/netty-codec-http2/4.1.115.Final/netty-codec-http2-4.1.115.Final.jar:/Users/edls/.m2/repository/io/netty/netty-handler/4.1.115.Final/netty-handler-4.1.115.Final.jar:/Users/edls/.m2/repository/io/netty/netty-codec-http/4.1.115.Final/netty-codec-http-4.1.115.Final.jar:/Users/edls/.m2/repository/io/netty/netty-resolver-dns/4.1.115.Final/netty-resolver-dns-4.1.115.Final.jar:/Users/edls/.m2/repository/io/netty/netty-codec-dns/4.1.115.Final/netty-codec-dns-4.1.115.Final.jar:/Users/edls/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.115.Final/netty-transport-native-unix-common-4.1.115.Final-linux-x86_64.jar:/Users/edls/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.115.Final/netty-transport-native-unix-common-4.1.115.Final-linux-aarch_64.jar:/Users/edls/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.115.Final/netty-transport-native-unix-common-4.1.115.Final-osx-x86_64.jar:/Users/edls/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.115.Final/netty-transport-native-unix-common-4.1.115.Final-osx-aarch_64.jar:/Users/edls/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/Users/edls/.m2/repository/io/netty/netty-handler-proxy/4.1.115.Final/netty-handler-proxy-4.1.115.Final.jar:/Users/edls/.m2/repository/io/netty/netty-codec-socks/4.1.115.Final/netty-codec-socks-4.1.115.Final.jar:/Users/edls/.m2/repository/io/netty/netty-transport-native-epoll/4.1.115.Final/netty-transport-native-epoll-4.1.115.Final-linux-x86_64.jar:/Users/edls/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.115.Final/netty-transport-native-unix-common-4.1.115.Final.jar:/Users/edls/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.115.Final/netty-transport-classes-epoll-4.1.115.Final.jar:/Users/edls/.m2/repository/io/netty/netty-transport-native-epoll/4.1.115.Final/netty-transport-native-epoll-4.1.115.Final-linux-aarch_64.jar:/Users/edls/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.115.Final/netty-transport-native-kqueue-4.1.115.Final-osx-x86_64.jar:/Users/edls/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.115.Final/netty-transport-classes-kqueue-4.1.115.Final.jar:/Users/edls/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.115.Final/netty-resolver-dns-native-macos-4.1.115.Final-osx-x86_64.jar:/Users/edls/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.115.Final/netty-resolver-dns-classes-macos-4.1.115.Final.jar:/Users/edls/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.115.Final/netty-transport-native-kqueue-4.1.115.Final-osx-aarch_64.jar:/Users/edls/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.115.Final/netty-resolver-dns-native-macos-4.1.115.Final-osx-aarch_64.jar:/Users/edls/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.69.Final/netty-tcnative-boringssl-static-2.0.69.Final-linux-x86_64.jar:/Users/edls/.m2/repository/io/netty/netty-tcnative-classes/2.0.69.Final/netty-tcnative-classes-2.0.69.Final.jar:/Users/edls/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.69.Final/netty-tcnative-boringssl-static-2.0.69.Final-linux-aarch_64.jar:/Users/edls/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.69.Final/netty-tcnative-boringssl-static-2.0.69.Final-osx-x86_64.jar:/Users/edls/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.69.Final/netty-tcnative-boringssl-static-2.0.69.Final-osx-aarch_64.jar:/Users/edls/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.69.Final/netty-tcnative-boringssl-static-2.0.69.Final-windows-x86_64.jar:/Users/edls/.m2/repository/com/aayushatharva/brotli4j/brotli4j/1.17.0/brotli4j-1.17.0.jar:/Users/edls/.m2/repository/com/aayushatharva/brotli4j/service/1.17.0/service-1.17.0.jar:/Users/edls/.m2/repository/com/aayushatharva/brotli4j/native-osx-x86_64/1.17.0/native-osx-x86_64-1.17.0.jar:/Users/edls/.m2/repository/org/apache/httpcomponents/httpclient/4.5.14/httpclient-4.5.14.jar:/Users/edls/.m2/repository/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar:/Users/edls/.m2/repository/commons-codec/commons-codec/1.16.1/commons-codec-1.16.1.jar:/Users/edls/.m2/repository/ch/qos/logback/logback-classic/1.5.4/logback-classic-1.5.4.jar:/Users/edls/.m2/repository/ch/qos/logback/logback-core/1.5.4/logback-core-1.5.4.jar:/Users/edls/.m2/repository/org/slf4j/jcl-over-slf4j/2.0.12/jcl-over-slf4j-2.0.12.jar:/Users/edls/.m2/repository/org/slf4j/slf4j-api/2.0.12/slf4j-api-2.0.12.jar:/Users/edls/.m2/repository/org/antlr/antlr4-runtime/4.13.1/antlr4-runtime-4.13.1.jar:/Users/edls/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/edls/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/Users/edls/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/Users/edls/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/Users/edls/.m2/repository/org/yaml/snakeyaml/2.3/snakeyaml-2.3.jar:/Users/edls/.m2/repository/de/siegmar/fastcsv/3.4.0/fastcsv-3.4.0.jar:/Users/edls/.m2/repository/info/picocli/picocli/4.7.6/picocli-4.7.6.jar:/Users/edls/.m2/repository/io/github/classgraph/classgraph/4.8.179/classgraph-4.8.179.jar:/Users/edls/.m2/repository/io/github/t12y/resemble/1.1.0/resemble-1.1.0.jar:/Users/edls/.m2/repository/io/github/t12y/ssim/1.0.0/ssim-1.0.0.jar:/Users/edls/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/edls/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/edls/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/edls/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/edls/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/edls/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/Users/edls/.m2/repository/net/masterthought/cucumber-reporting/5.7.0/cucumber-reporting-5.7.0.jar:/Users/edls/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.0/jackson-databind-2.13.0.jar:/Users/edls/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.0/jackson-annotations-2.13.0.jar:/Users/edls/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.0/jackson-core-2.13.0.jar:/Users/edls/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.0/jackson-datatype-jsr310-2.13.0.jar:/Users/edls/.m2/repository/org/apache/velocity/velocity-engine-core/2.3/velocity-engine-core-2.3.jar:/Users/edls/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/edls/.m2/repository/joda-time/joda-time/2.10.10/joda-time-2.10.10.jar:/Users/edls/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/edls/.m2/repository/commons-io/commons-io/2.7/commons-io-2.7.jar:/Users/edls/.m2/repository/org/codehaus/plexus/plexus-utils/3.3.0/plexus-utils-3.3.0.jar:/Users/edls/.m2/repository/org/jsoup/jsoup/1.14.2/jsoup-1.14.2.jar:/Users/edls/.m2/repository/com/google/guava/guava/30.1.1-jre/guava-30.1.1-jre.jar:/Users/edls/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/edls/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/edls/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/edls/.m2/repository/org/checkerframework/checker-qual/3.8.0/checker-qual-3.8.0.jar:/Users/edls/.m2/repository/com/google/errorprone/error_prone_annotations/2.5.1/error_prone_annotations-2.5.1.jar:/Users/edls/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/edls/.m2/repository/com/googlecode/owasp-java-html-sanitizer/owasp-java-html-sanitizer/20211018.2/owasp-java-html-sanitizer-20211018.2.jar:/Users/edls/.m2/repository/commons-configuration/commons-configuration/1.10/commons-configuration-1.10.jar:/Users/edls/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/edls/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/edls"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-10-15"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-23.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/edls/NetBeansProjects/transaction-api"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/edls/NetBeansProjects/transaction-api/target/surefire/surefirebooter-20250520220000985_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="23.0.1+11-39"/>
+    <property name="user.name" value="edls"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.4.1"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="maven.ext.class.path" value="/Applications/Apache NetBeans.app/Contents/Resources/netbeans/java/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="localRepository" value="/Users/edls/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/rr/_prb47r13t51kb9g1yb_jvm40000gn/T/"/>
+    <property name="java.version" value="23.0.1"/>
+    <property name="user.dir" value="/Users/edls/NetBeansProjects/transaction-api"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/edls/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="23.0.1+11-39"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="67.0"/>
+  </properties>
+  <testcase name="createTransactions" classname="tests.ParallelRunnerTest" time="9.614">
+    <system-out><![CDATA[22:00:01.755 [main] INFO  com.intuit.karate.Runner - karate.env is: 'dev'
+22:00:02.115 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:00:02.121 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1747792802119
+22:00:02.922 [main] INFO  com.intuit.karate - karate.env system property was: dev 
+22:00:03.226 [main] DEBUG com.intuit.karate - request:
+1 > POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
+1 > Content-Type: application/json; charset=UTF-8
+1 > Accept: application/json
+1 > Content-Length: 124
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"transactionId":"txn201","name":"Alice","title":"Payment","amount":100,"currency":"USD","timestamp":"2024-05-01T10:00:00Z"}
+
+22:00:04.661 [main] DEBUG com.intuit.karate - response time in milliseconds: 1432
+1 < 201
+1 < Date: Wed, 21 May 2025 02:00:04 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 148
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UBpi-goAMEZtg=
+{"name": "Alice", "title": "Payment", "amount": 100.0, "currency": "USD", "timestamp": "2024-05-01T10:00:00Z", "id": "txn201", "message": "SUCCESS"}
+
+22:00:04.744 [main] DEBUG com.intuit.karate - request:
+1 > POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
+1 > Content-Type: application/json; charset=UTF-8
+1 > Accept: application/json
+1 > Content-Length: 122
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"transactionId":"txn202","name":"Bob","title":"Invoice","amount":200,"currency":"USD","timestamp":"2024-05-02T15:30:00Z"}
+
+22:00:04.972 [main] DEBUG com.intuit.karate - response time in milliseconds: 227
+1 < 201
+1 < Date: Wed, 21 May 2025 02:00:05 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 146
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UB1jTvIAMEZ9Q=
+{"name": "Bob", "title": "Invoice", "amount": 200.0, "currency": "USD", "timestamp": "2024-05-02T15:30:00Z", "id": "txn202", "message": "SUCCESS"}
+
+22:00:04.985 [main] DEBUG com.intuit.karate - request:
+1 > POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
+1 > Content-Type: application/json; charset=UTF-8
+1 > Accept: application/json
+1 > Content-Length: 125
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"transactionId":"txn203","name":"Charlie","title":"Refund","amount":150,"currency":"USD","timestamp":"2024-05-03T09:45:00Z"}
+
+22:00:05.171 [main] DEBUG com.intuit.karate - response time in milliseconds: 185
+1 < 201
+1 < Date: Wed, 21 May 2025 02:00:05 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 149
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UB3gjjoAMEPNg=
+{"name": "Charlie", "title": "Refund", "amount": 150.0, "currency": "USD", "timestamp": "2024-05-03T09:45:00Z", "id": "txn203", "message": "SUCCESS"}
+
+22:00:05.182 [main] DEBUG com.intuit.karate - request:
+1 > POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
+1 > Content-Type: application/json; charset=UTF-8
+1 > Accept: application/json
+1 > Content-Length: 124
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"transactionId":"txn204","name":"Diana","title":"Payment","amount":250,"currency":"USD","timestamp":"2024-05-04T11:20:00Z"}
+
+22:00:05.414 [main] DEBUG com.intuit.karate - response time in milliseconds: 231
+1 < 201
+1 < Date: Wed, 21 May 2025 02:00:05 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 148
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UB5hc-IAMEPdA=
+{"name": "Diana", "title": "Payment", "amount": 250.0, "currency": "USD", "timestamp": "2024-05-04T11:20:00Z", "id": "txn204", "message": "SUCCESS"}
+
+22:00:05.424 [main] DEBUG com.intuit.karate - request:
+1 > POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
+1 > Content-Type: application/json; charset=UTF-8
+1 > Accept: application/json
+1 > Content-Length: 124
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"transactionId":"txn205","name":"Ethan","title":"Invoice","amount":300,"currency":"USD","timestamp":"2024-05-05T13:10:00Z"}
+
+22:00:05.632 [main] DEBUG com.intuit.karate - response time in milliseconds: 207
+1 < 201
+1 < Date: Wed, 21 May 2025 02:00:05 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 148
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UB8hQ8IAMEPeg=
+{"name": "Ethan", "title": "Invoice", "amount": 300.0, "currency": "USD", "timestamp": "2024-05-05T13:10:00Z", "id": "txn205", "message": "SUCCESS"}
+
+22:00:05.641 [main] DEBUG com.intuit.karate - request:
+1 > POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
+1 > Content-Type: application/json; charset=UTF-8
+1 > Accept: application/json
+1 > Content-Length: 124
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"transactionId":"txn206","name":"Fiona","title":"Payment","amount":120,"currency":"USD","timestamp":"2024-05-06T14:00:00Z"}
+
+22:00:05.833 [main] DEBUG com.intuit.karate - response time in milliseconds: 191
+1 < 201
+1 < Date: Wed, 21 May 2025 02:00:05 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 148
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UB-jDvIAMEPhQ=
+{"name": "Fiona", "title": "Payment", "amount": 120.0, "currency": "USD", "timestamp": "2024-05-06T14:00:00Z", "id": "txn206", "message": "SUCCESS"}
+
+22:00:05.841 [main] DEBUG com.intuit.karate - request:
+1 > POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
+1 > Content-Type: application/json; charset=UTF-8
+1 > Accept: application/json
+1 > Content-Length: 124
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"transactionId":"txn207","name":"George","title":"Refund","amount":180,"currency":"USD","timestamp":"2024-05-07T16:00:00Z"}
+
+22:00:06.053 [main] DEBUG com.intuit.karate - response time in milliseconds: 211
+1 < 201
+1 < Date: Wed, 21 May 2025 02:00:06 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 148
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UCAjqxoAMEP7g=
+{"name": "George", "title": "Refund", "amount": 180.0, "currency": "USD", "timestamp": "2024-05-07T16:00:00Z", "id": "txn207", "message": "SUCCESS"}
+
+22:00:06.064 [main] DEBUG com.intuit.karate - request:
+1 > POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
+1 > Content-Type: application/json; charset=UTF-8
+1 > Accept: application/json
+1 > Content-Length: 125
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"transactionId":"txn208","name":"Hannah","title":"Invoice","amount":220,"currency":"USD","timestamp":"2024-05-08T10:15:00Z"}
+
+22:00:06.234 [main] DEBUG com.intuit.karate - response time in milliseconds: 170
+1 < 201
+1 < Date: Wed, 21 May 2025 02:00:06 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 149
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UCCivOoAMEZog=
+{"name": "Hannah", "title": "Invoice", "amount": 220.0, "currency": "USD", "timestamp": "2024-05-08T10:15:00Z", "id": "txn208", "message": "SUCCESS"}
+
+22:00:06.242 [main] DEBUG com.intuit.karate - request:
+1 > POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
+1 > Content-Type: application/json; charset=UTF-8
+1 > Accept: application/json
+1 > Content-Length: 122
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"transactionId":"txn209","name":"Ian","title":"Payment","amount":140,"currency":"USD","timestamp":"2024-05-09T09:00:00Z"}
+
+22:00:06.452 [main] DEBUG com.intuit.karate - response time in milliseconds: 210
+1 < 201
+1 < Date: Wed, 21 May 2025 02:00:06 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 146
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UCEhfboAMEPdA=
+{"name": "Ian", "title": "Payment", "amount": 140.0, "currency": "USD", "timestamp": "2024-05-09T09:00:00Z", "id": "txn209", "message": "SUCCESS"}
+
+22:00:06.460 [main] DEBUG com.intuit.karate - request:
+1 > POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
+1 > Content-Type: application/json; charset=UTF-8
+1 > Accept: application/json
+1 > Content-Length: 122
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"transactionId":"txn210","name":"Jill","title":"Refund","amount":160,"currency":"USD","timestamp":"2024-05-10T12:00:00Z"}
+
+22:00:06.639 [main] DEBUG com.intuit.karate - response time in milliseconds: 178
+1 < 201
+1 < Date: Wed, 21 May 2025 02:00:06 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 146
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UCGhFbIAMEZUA=
+{"name": "Jill", "title": "Refund", "amount": 160.0, "currency": "USD", "timestamp": "2024-05-10T12:00:00Z", "id": "txn210", "message": "SUCCESS"}
+
+22:00:06.646 [main] DEBUG com.intuit.karate - request:
+1 > POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
+1 > Content-Type: application/json; charset=UTF-8
+1 > Accept: application/json
+1 > Content-Length: 124
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"transactionId":"txn211","name":"Kevin","title":"Invoice","amount":240,"currency":"USD","timestamp":"2024-05-11T11:30:00Z"}
+
+22:00:06.835 [main] DEBUG com.intuit.karate - response time in milliseconds: 188
+1 < 201
+1 < Date: Wed, 21 May 2025 02:00:06 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 148
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UCIgX7IAMEPUA=
+{"name": "Kevin", "title": "Invoice", "amount": 240.0, "currency": "USD", "timestamp": "2024-05-11T11:30:00Z", "id": "txn211", "message": "SUCCESS"}
+
+22:00:06.854 [main] DEBUG com.intuit.karate - request:
+1 > POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
+1 > Content-Type: application/json; charset=UTF-8
+1 > Accept: application/json
+1 > Content-Length: 123
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"transactionId":"txn212","name":"Lena","title":"Payment","amount":260,"currency":"USD","timestamp":"2024-05-12T08:00:00Z"}
+
+22:00:07.033 [main] DEBUG com.intuit.karate - response time in milliseconds: 179
+1 < 201
+1 < Date: Wed, 21 May 2025 02:00:07 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 147
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UCKhKWoAMEZkw=
+{"name": "Lena", "title": "Payment", "amount": 260.0, "currency": "USD", "timestamp": "2024-05-12T08:00:00Z", "id": "txn212", "message": "SUCCESS"}
+
+22:00:07.039 [main] DEBUG com.intuit.karate - request:
+1 > POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
+1 > Content-Type: application/json; charset=UTF-8
+1 > Accept: application/json
+1 > Content-Length: 123
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"transactionId":"txn213","name":"Mike","title":"Invoice","amount":300,"currency":"USD","timestamp":"2024-05-13T17:00:00Z"}
+
+22:00:07.215 [main] DEBUG com.intuit.karate - response time in milliseconds: 175
+1 < 201
+1 < Date: Wed, 21 May 2025 02:00:07 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 147
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UCMip6oAMEPVg=
+{"name": "Mike", "title": "Invoice", "amount": 300.0, "currency": "USD", "timestamp": "2024-05-13T17:00:00Z", "id": "txn213", "message": "SUCCESS"}
+
+22:00:07.221 [main] DEBUG com.intuit.karate - request:
+1 > POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
+1 > Content-Type: application/json; charset=UTF-8
+1 > Accept: application/json
+1 > Content-Length: 122
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"transactionId":"txn214","name":"Nina","title":"Refund","amount":130,"currency":"USD","timestamp":"2024-05-14T14:30:00Z"}
+
+22:00:07.394 [main] DEBUG com.intuit.karate - response time in milliseconds: 172
+1 < 201
+1 < Date: Wed, 21 May 2025 02:00:07 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 146
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UCOiHvIAMEZ4g=
+{"name": "Nina", "title": "Refund", "amount": 130.0, "currency": "USD", "timestamp": "2024-05-14T14:30:00Z", "id": "txn214", "message": "SUCCESS"}
+
+22:00:07.401 [main] DEBUG com.intuit.karate - request:
+1 > POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
+1 > Content-Type: application/json; charset=UTF-8
+1 > Accept: application/json
+1 > Content-Length: 123
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"transactionId":"txn215","name":"Owen","title":"Payment","amount":280,"currency":"USD","timestamp":"2024-05-15T10:20:00Z"}
+
+22:00:07.554 [main] DEBUG com.intuit.karate - response time in milliseconds: 153
+1 < 201
+1 < Date: Wed, 21 May 2025 02:00:07 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 147
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UCQgwQIAMEZCQ=
+{"name": "Owen", "title": "Payment", "amount": 280.0, "currency": "USD", "timestamp": "2024-05-15T10:20:00Z", "id": "txn215", "message": "SUCCESS"}
+
+22:00:07.560 [main] DEBUG com.intuit.karate - request:
+1 > POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
+1 > Content-Type: application/json; charset=UTF-8
+1 > Accept: application/json
+1 > Content-Length: 124
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"transactionId":"txn216","name":"Paula","title":"Invoice","amount":190,"currency":"USD","timestamp":"2024-05-16T09:50:00Z"}
+
+22:00:07.774 [main] DEBUG com.intuit.karate - response time in milliseconds: 213
+1 < 201
+1 < Date: Wed, 21 May 2025 02:00:07 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 148
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UCRiIgIAMEZYw=
+{"name": "Paula", "title": "Invoice", "amount": 190.0, "currency": "USD", "timestamp": "2024-05-16T09:50:00Z", "id": "txn216", "message": "SUCCESS"}
+
+22:00:07.781 [main] DEBUG com.intuit.karate - request:
+1 > POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
+1 > Content-Type: application/json; charset=UTF-8
+1 > Accept: application/json
+1 > Content-Length: 123
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"transactionId":"txn217","name":"Quinn","title":"Refund","amount":110,"currency":"USD","timestamp":"2024-05-17T13:40:00Z"}
+
+22:00:07.954 [main] DEBUG com.intuit.karate - response time in milliseconds: 171
+1 < 201
+1 < Date: Wed, 21 May 2025 02:00:08 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 147
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UCTgeToAMEPkA=
+{"name": "Quinn", "title": "Refund", "amount": 110.0, "currency": "USD", "timestamp": "2024-05-17T13:40:00Z", "id": "txn217", "message": "SUCCESS"}
+
+22:00:07.960 [main] DEBUG com.intuit.karate - request:
+1 > POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
+1 > Content-Type: application/json; charset=UTF-8
+1 > Accept: application/json
+1 > Content-Length: 125
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"transactionId":"txn218","name":"Rachel","title":"Payment","amount":210,"currency":"USD","timestamp":"2024-05-18T15:15:00Z"}
+
+22:00:08.155 [main] DEBUG com.intuit.karate - response time in milliseconds: 195
+1 < 201
+1 < Date: Wed, 21 May 2025 02:00:08 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 149
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UCVibSoAMEPmg=
+{"name": "Rachel", "title": "Payment", "amount": 210.0, "currency": "USD", "timestamp": "2024-05-18T15:15:00Z", "id": "txn218", "message": "SUCCESS"}
+
+22:00:08.161 [main] DEBUG com.intuit.karate - request:
+1 > POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
+1 > Content-Type: application/json; charset=UTF-8
+1 > Accept: application/json
+1 > Content-Length: 124
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"transactionId":"txn219","name":"Steve","title":"Invoice","amount":270,"currency":"USD","timestamp":"2024-05-19T16:25:00Z"}
+
+22:00:08.352 [main] DEBUG com.intuit.karate - response time in milliseconds: 191
+1 < 201
+1 < Date: Wed, 21 May 2025 02:00:08 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 148
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UCXiKRoAMEZDQ=
+{"name": "Steve", "title": "Invoice", "amount": 270.0, "currency": "USD", "timestamp": "2024-05-19T16:25:00Z", "id": "txn219", "message": "SUCCESS"}
+
+22:00:08.359 [main] DEBUG com.intuit.karate - request:
+1 > POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
+1 > Content-Type: application/json; charset=UTF-8
+1 > Accept: application/json
+1 > Content-Length: 122
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"transactionId":"txn220","name":"Tina","title":"Refund","amount":170,"currency":"USD","timestamp":"2024-05-20T12:05:00Z"}
+
+22:00:08.554 [main] DEBUG com.intuit.karate - response time in milliseconds: 194
+1 < 201
+1 < Date: Wed, 21 May 2025 02:00:08 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 146
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UCZhWFoAMEPOA=
+{"name": "Tina", "title": "Refund", "amount": 170.0, "currency": "USD", "timestamp": "2024-05-20T12:05:00Z", "id": "txn220", "message": "SUCCESS"}
+
+22:00:08.560 [main] DEBUG com.intuit.karate - request:
+1 > POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
+1 > Content-Type: application/json; charset=UTF-8
+1 > Accept: application/json
+1 > Content-Length: 122
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"transactionId":"txn221","name":"Uma","title":"Payment","amount":310,"currency":"USD","timestamp":"2024-05-21T08:10:00Z"}
+
+22:00:08.733 [main] DEBUG com.intuit.karate - response time in milliseconds: 172
+1 < 201
+1 < Date: Wed, 21 May 2025 02:00:08 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 146
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UCbimvoAMEZHw=
+{"name": "Uma", "title": "Payment", "amount": 310.0, "currency": "USD", "timestamp": "2024-05-21T08:10:00Z", "id": "txn221", "message": "SUCCESS"}
+
+22:00:08.738 [main] DEBUG com.intuit.karate - request:
+1 > POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
+1 > Content-Type: application/json; charset=UTF-8
+1 > Accept: application/json
+1 > Content-Length: 125
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"transactionId":"txn222","name":"Victor","title":"Invoice","amount":135,"currency":"USD","timestamp":"2024-05-22T11:45:00Z"}
+
+22:00:08.957 [main] DEBUG com.intuit.karate - response time in milliseconds: 217
+1 < 201
+1 < Date: Wed, 21 May 2025 02:00:09 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 149
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UCdhLeoAMEZUA=
+{"name": "Victor", "title": "Invoice", "amount": 135.0, "currency": "USD", "timestamp": "2024-05-22T11:45:00Z", "id": "txn222", "message": "SUCCESS"}
+
+22:00:08.964 [main] DEBUG com.intuit.karate - request:
+1 > POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
+1 > Content-Type: application/json; charset=UTF-8
+1 > Accept: application/json
+1 > Content-Length: 123
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"transactionId":"txn223","name":"Wendy","title":"Refund","amount":145,"currency":"USD","timestamp":"2024-05-23T13:30:00Z"}
+
+22:00:09.153 [main] DEBUG com.intuit.karate - response time in milliseconds: 189
+1 < 201
+1 < Date: Wed, 21 May 2025 02:00:09 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 147
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UCfhX8IAMEZgw=
+{"name": "Wendy", "title": "Refund", "amount": 145.0, "currency": "USD", "timestamp": "2024-05-23T13:30:00Z", "id": "txn223", "message": "SUCCESS"}
+
+22:00:09.159 [main] DEBUG com.intuit.karate - request:
+1 > POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
+1 > Content-Type: application/json; charset=UTF-8
+1 > Accept: application/json
+1 > Content-Length: 125
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"transactionId":"txn224","name":"Xander","title":"Payment","amount":295,"currency":"USD","timestamp":"2024-05-24T10:50:00Z"}
+
+22:00:09.332 [main] DEBUG com.intuit.karate - response time in milliseconds: 173
+1 < 201
+1 < Date: Wed, 21 May 2025 02:00:09 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 149
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UChh3gIAMEPrA=
+{"name": "Xander", "title": "Payment", "amount": 295.0, "currency": "USD", "timestamp": "2024-05-24T10:50:00Z", "id": "txn224", "message": "SUCCESS"}
+
+22:00:09.337 [main] DEBUG com.intuit.karate - request:
+1 > POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
+1 > Content-Type: application/json; charset=UTF-8
+1 > Accept: application/json
+1 > Content-Length: 123
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"transactionId":"txn225","name":"Yara","title":"Invoice","amount":275,"currency":"USD","timestamp":"2024-05-25T09:15:00Z"}
+
+22:00:09.533 [main] DEBUG com.intuit.karate - response time in milliseconds: 196
+1 < 201
+1 < Date: Wed, 21 May 2025 02:00:09 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 147
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UCjjJvoAMEPbA=
+{"name": "Yara", "title": "Invoice", "amount": 275.0, "currency": "USD", "timestamp": "2024-05-25T09:15:00Z", "id": "txn225", "message": "SUCCESS"}
+
+---------------------------------------------------------
+feature: classpath:tests/transactions/01-create-transactions.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 6.5903
+---------------------------------------------------------
+
+22:00:10.435 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:tests/transactions/01-create-transactions.feature
+Karate version: 1.5.1 | env: dev
+======================================================
+elapsed:   8.69 | threads:    1 | thread time: 6.59 
+features:     1 | skipped:    0 | efficiency: 0.76
+scenarios:    1 | passed:     1 | failed: 0
+======================================================
+
+HTML report: (paste into browser to view) | Karate version: 1.5.1 | env: dev
+file:///Users/edls/NetBeansProjects/transaction-api/target/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+    <system-err><![CDATA[May 20, 2025 10:00:10 PM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File '/Users/edls/NetBeansProjects/transaction-api/target/karate-reports/tests.transactions.01-create-transactions.json' contains 1 features
+]]></system-err>
+  </testcase>
+  <testcase name="createTransactionsBad" classname="tests.ParallelRunnerTest" time="0.368">
+    <system-out><![CDATA[22:00:11.076 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:00:11.077 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1747792811077
+22:00:11.084 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:00:11.093 [main] DEBUG com.intuit.karate - request:
+1 > POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
+1 > Content-Type: application/json; charset=UTF-8
+1 > Accept: application/json
+1 > Content-Length: 112
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"transactionId":"txn2001","name":"Alice","title":"Payment","currency":"USD","timestamp":"2024-05-01T10:00:00Z"}
+
+22:00:11.196 [main] DEBUG com.intuit.karate - response time in milliseconds: 101
+1 < 400
+1 < Date: Wed, 21 May 2025 02:00:11 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 38
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UC1i6VoAMEPfw=
+{"message": "Missing required fields"}
+
+22:00:11.201 [main] DEBUG com.intuit.karate - request:
+1 > POST https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
+1 > Content-Type: application/json; charset=UTF-8
+1 > Accept: application/json
+1 > Content-Length: 110
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"transactionId":"txn2002","name":"Bob","title":"Invoice","currency":"USD","timestamp":"2024-05-02T15:30:00Z"}
+
+22:00:11.310 [main] DEBUG com.intuit.karate - response time in milliseconds: 107
+1 < 400
+1 < Date: Wed, 21 May 2025 02:00:11 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 38
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UC2gzOoAMEPNg=
+{"message": "Missing required fields"}
+
+---------------------------------------------------------
+feature: classpath:tests/transactions/02-create-transactions-bad.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 0.2258
+---------------------------------------------------------
+
+22:00:11.403 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:tests/transactions/02-create-transactions-bad.feature
+Karate version: 1.5.1
+======================================================
+elapsed:   0.33 | threads:    1 | thread time: 0.23 
+features:     1 | skipped:    0 | efficiency: 0.69
+scenarios:    1 | passed:     1 | failed: 0
+======================================================
+
+HTML report: (paste into browser to view) | Karate version: 1.5.1
+file:///Users/edls/NetBeansProjects/transaction-api/target/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="getAllTransactions" classname="tests.ParallelRunnerTest" time="0.297">
+    <system-out><![CDATA[22:00:11.445 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:00:11.445 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1747792811445
+22:00:11.448 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:00:11.449 [main] DEBUG com.intuit.karate - request:
+1 > GET https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions
+1 > Content-Type: application/json
+1 > Accept: application/json
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:11.630 [main] DEBUG com.intuit.karate - response time in milliseconds: 181
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:11 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 3187
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UC4hSDoAMEPvg=
+[{"amount": 100.0, "currency": "USD", "id": "txn201", "name": "Alice", "title": "Payment", "timestamp": "2024-05-01T10:00:00Z"}, {"amount": 190.0, "currency": "USD", "id": "txn216", "name": "Paula", "title": "Invoice", "timestamp": "2024-05-16T09:50:00Z"}, {"amount": 170.0, "currency": "USD", "id": "txn220", "name": "Tina", "title": "Refund", "timestamp": "2024-05-20T12:05:00Z"}, {"amount": 250.0, "currency": "USD", "id": "txn204", "name": "Diana", "title": "Payment", "timestamp": "2024-05-04T11:20:00Z"}, {"amount": 260.0, "currency": "USD", "id": "txn212", "name": "Lena", "title": "Payment", "timestamp": "2024-05-12T08:00:00Z"}, {"amount": 120.0, "currency": "USD", "id": "txn206", "name": "Fiona", "title": "Payment", "timestamp": "2024-05-06T14:00:00Z"}, {"amount": 160.0, "currency": "USD", "id": "txn210", "name": "Jill", "title": "Refund", "timestamp": "2024-05-10T12:00:00Z"}, {"amount": 300.0, "currency": "USD", "id": "txn213", "name": "Mike", "title": "Invoice", "timestamp": "2024-05-13T17:00:00Z"}, {"amount": 280.0, "currency": "USD", "id": "txn215", "name": "Owen", "title": "Payment", "timestamp": "2024-05-15T10:20:00Z"}, {"amount": 310.0, "currency": "USD", "id": "txn221", "name": "Uma", "title": "Payment", "timestamp": "2024-05-21T08:10:00Z"}, {"amount": 270.0, "currency": "USD", "id": "txn219", "name": "Steve", "title": "Invoice", "timestamp": "2024-05-19T16:25:00Z"}, {"amount": 110.0, "currency": "USD", "id": "txn217", "name": "Quinn", "title": "Refund", "timestamp": "2024-05-17T13:40:00Z"}, {"amount": 220.0, "currency": "USD", "id": "txn208", "name": "Hannah", "title": "Invoice", "timestamp": "2024-05-08T10:15:00Z"}, {"amount": 300.0, "currency": "USD", "id": "txn205", "name": "Ethan", "title": "Invoice", "timestamp": "2024-05-05T13:10:00Z"}, {"amount": 135.0, "currency": "USD", "id": "txn222", "name": "Victor", "title": "Invoice", "timestamp": "2024-05-22T11:45:00Z"}, {"amount": 295.0, "currency": "USD", "id": "txn224", "name": "Xander", "title": "Payment", "timestamp": "2024-05-24T10:50:00Z"}, {"amount": 145.0, "currency": "USD", "id": "txn223", "name": "Wendy", "title": "Refund", "timestamp": "2024-05-23T13:30:00Z"}, {"amount": 275.0, "currency": "USD", "id": "txn225", "name": "Yara", "title": "Invoice", "timestamp": "2024-05-25T09:15:00Z"}, {"amount": 240.0, "currency": "USD", "id": "txn211", "name": "Kevin", "title": "Invoice", "timestamp": "2024-05-11T11:30:00Z"}, {"amount": 210.0, "currency": "USD", "id": "txn218", "name": "Rachel", "title": "Payment", "timestamp": "2024-05-18T15:15:00Z"}, {"amount": 140.0, "currency": "USD", "id": "txn209", "name": "Ian", "title": "Payment", "timestamp": "2024-05-09T09:00:00Z"}, {"amount": 150.0, "currency": "USD", "id": "txn203", "name": "Charlie", "title": "Refund", "timestamp": "2024-05-03T09:45:00Z"}, {"amount": 130.0, "currency": "USD", "id": "txn214", "name": "Nina", "title": "Refund", "timestamp": "2024-05-14T14:30:00Z"}, {"amount": 200.0, "currency": "USD", "id": "txn202", "name": "Bob", "title": "Invoice", "timestamp": "2024-05-02T15:30:00Z"}, {"amount": 180.0, "currency": "USD", "id": "txn207", "name": "George", "title": "Refund", "timestamp": "2024-05-07T16:00:00Z"}]
+
+22:00:11.632 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+---------------------------------------------------------
+feature: classpath:tests/transactions/03-get-all-transactions.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 0.2181
+---------------------------------------------------------
+
+22:00:11.707 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:tests/transactions/03-get-all-transactions.feature
+Karate version: 1.5.1
+======================================================
+elapsed:   0.26 | threads:    1 | thread time: 0.22 
+features:     1 | skipped:    0 | efficiency: 0.83
+scenarios:    1 | passed:     1 | failed: 0
+======================================================
+
+HTML report: (paste into browser to view) | Karate version: 1.5.1
+file:///Users/edls/NetBeansProjects/transaction-api/target/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="getTransactionsById" classname="tests.ParallelRunnerTest" time="3.843">
+    <system-out><![CDATA[22:00:11.742 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:00:11.743 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1747792811742
+22:00:11.747 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:00:11.754 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:11.756 [main] DEBUG com.intuit.karate - request:
+1 > GET https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn201
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:11.893 [main] DEBUG com.intuit.karate - response time in milliseconds: 135
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:12 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 126
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UC7h6eIAMEZPQ=
+{"amount": 100.0, "currency": "USD", "id": "txn201", "name": "Alice", "title": "Payment", "timestamp": "2024-05-01T10:00:00Z"}
+
+22:00:11.894 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:11.895 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 100.0,
+  "currency": "USD",
+  "id": "txn201",
+  "name": "Alice",
+  "title": "Payment",
+  "timestamp": "2024-05-01T10:00:00Z"
+}
+ 
+
+ 
+22:00:11.896 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn201 
+22:00:11.900 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:11.901 [main] DEBUG com.intuit.karate - request:
+1 > GET https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn202
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:12.035 [main] DEBUG com.intuit.karate - response time in milliseconds: 133
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:12 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 124
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UC9jtXoAMEZig=
+{"amount": 200.0, "currency": "USD", "id": "txn202", "name": "Bob", "title": "Invoice", "timestamp": "2024-05-02T15:30:00Z"}
+
+22:00:12.035 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:12.036 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 200.0,
+  "currency": "USD",
+  "id": "txn202",
+  "name": "Bob",
+  "title": "Invoice",
+  "timestamp": "2024-05-02T15:30:00Z"
+}
+ 
+
+ 
+22:00:12.036 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn202 
+22:00:12.040 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:12.041 [main] DEBUG com.intuit.karate - request:
+1 > GET https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn203
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:12.174 [main] DEBUG com.intuit.karate - response time in milliseconds: 132
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:12 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 127
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UC-jSTIAMEZsw=
+{"amount": 150.0, "currency": "USD", "id": "txn203", "name": "Charlie", "title": "Refund", "timestamp": "2024-05-03T09:45:00Z"}
+
+22:00:12.175 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:12.175 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 150.0,
+  "currency": "USD",
+  "id": "txn203",
+  "name": "Charlie",
+  "title": "Refund",
+  "timestamp": "2024-05-03T09:45:00Z"
+}
+ 
+
+ 
+22:00:12.176 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn203 
+22:00:12.179 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:12.181 [main] DEBUG com.intuit.karate - request:
+1 > GET https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn204
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:12.294 [main] DEBUG com.intuit.karate - response time in milliseconds: 113
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:12 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 126
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UC_hC7oAMEZ8A=
+{"amount": 250.0, "currency": "USD", "id": "txn204", "name": "Diana", "title": "Payment", "timestamp": "2024-05-04T11:20:00Z"}
+
+22:00:12.295 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:12.296 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 250.0,
+  "currency": "USD",
+  "id": "txn204",
+  "name": "Diana",
+  "title": "Payment",
+  "timestamp": "2024-05-04T11:20:00Z"
+}
+ 
+
+ 
+22:00:12.297 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn204 
+22:00:12.301 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:12.302 [main] DEBUG com.intuit.karate - request:
+1 > GET https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn205
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:12.452 [main] DEBUG com.intuit.karate - response time in milliseconds: 150
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:12 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 126
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UDBihQoAMEZhA=
+{"amount": 300.0, "currency": "USD", "id": "txn205", "name": "Ethan", "title": "Invoice", "timestamp": "2024-05-05T13:10:00Z"}
+
+22:00:12.453 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:12.454 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 300.0,
+  "currency": "USD",
+  "id": "txn205",
+  "name": "Ethan",
+  "title": "Invoice",
+  "timestamp": "2024-05-05T13:10:00Z"
+}
+ 
+
+ 
+22:00:12.454 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn205 
+22:00:12.458 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:12.459 [main] DEBUG com.intuit.karate - request:
+1 > GET https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn206
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:12.614 [main] DEBUG com.intuit.karate - response time in milliseconds: 155
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:12 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 126
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UDCijGIAMEZKA=
+{"amount": 120.0, "currency": "USD", "id": "txn206", "name": "Fiona", "title": "Payment", "timestamp": "2024-05-06T14:00:00Z"}
+
+22:00:12.615 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:12.615 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 120.0,
+  "currency": "USD",
+  "id": "txn206",
+  "name": "Fiona",
+  "title": "Payment",
+  "timestamp": "2024-05-06T14:00:00Z"
+}
+ 
+
+ 
+22:00:12.616 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn206 
+22:00:12.619 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:12.619 [main] DEBUG com.intuit.karate - request:
+1 > GET https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn207
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:12.754 [main] DEBUG com.intuit.karate - response time in milliseconds: 134
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:12 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 126
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UDEiU4oAMEZYw=
+{"amount": 180.0, "currency": "USD", "id": "txn207", "name": "George", "title": "Refund", "timestamp": "2024-05-07T16:00:00Z"}
+
+22:00:12.755 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:12.755 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 180.0,
+  "currency": "USD",
+  "id": "txn207",
+  "name": "George",
+  "title": "Refund",
+  "timestamp": "2024-05-07T16:00:00Z"
+}
+ 
+
+ 
+22:00:12.755 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn207 
+22:00:12.759 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:12.759 [main] DEBUG com.intuit.karate - request:
+1 > GET https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn208
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:12.896 [main] DEBUG com.intuit.karate - response time in milliseconds: 137
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:13 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 127
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UDFgwaIAMEPHA=
+{"amount": 220.0, "currency": "USD", "id": "txn208", "name": "Hannah", "title": "Invoice", "timestamp": "2024-05-08T10:15:00Z"}
+
+22:00:12.897 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:12.897 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 220.0,
+  "currency": "USD",
+  "id": "txn208",
+  "name": "Hannah",
+  "title": "Invoice",
+  "timestamp": "2024-05-08T10:15:00Z"
+}
+ 
+
+ 
+22:00:12.898 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn208 
+22:00:12.901 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:12.901 [main] DEBUG com.intuit.karate - request:
+1 > GET https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn209
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:13.034 [main] DEBUG com.intuit.karate - response time in milliseconds: 131
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:13 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 124
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UDHj4hoAMEZFA=
+{"amount": 140.0, "currency": "USD", "id": "txn209", "name": "Ian", "title": "Payment", "timestamp": "2024-05-09T09:00:00Z"}
+
+22:00:13.034 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:13.035 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 140.0,
+  "currency": "USD",
+  "id": "txn209",
+  "name": "Ian",
+  "title": "Payment",
+  "timestamp": "2024-05-09T09:00:00Z"
+}
+ 
+
+ 
+22:00:13.035 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn209 
+22:00:13.038 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:13.039 [main] DEBUG com.intuit.karate - request:
+1 > GET https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn210
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:13.191 [main] DEBUG com.intuit.karate - response time in milliseconds: 151
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:13 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 124
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UDIjc2IAMEPog=
+{"amount": 160.0, "currency": "USD", "id": "txn210", "name": "Jill", "title": "Refund", "timestamp": "2024-05-10T12:00:00Z"}
+
+22:00:13.191 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:13.192 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 160.0,
+  "currency": "USD",
+  "id": "txn210",
+  "name": "Jill",
+  "title": "Refund",
+  "timestamp": "2024-05-10T12:00:00Z"
+}
+ 
+
+ 
+22:00:13.192 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn210 
+22:00:13.195 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:13.196 [main] DEBUG com.intuit.karate - request:
+1 > GET https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn211
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:13.313 [main] DEBUG com.intuit.karate - response time in milliseconds: 117
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:13 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 126
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UDKhczoAMEZOg=
+{"amount": 240.0, "currency": "USD", "id": "txn211", "name": "Kevin", "title": "Invoice", "timestamp": "2024-05-11T11:30:00Z"}
+
+22:00:13.314 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:13.315 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 240.0,
+  "currency": "USD",
+  "id": "txn211",
+  "name": "Kevin",
+  "title": "Invoice",
+  "timestamp": "2024-05-11T11:30:00Z"
+}
+ 
+
+ 
+22:00:13.315 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn211 
+22:00:13.318 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:13.319 [main] DEBUG com.intuit.karate - request:
+1 > GET https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn212
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:13.433 [main] DEBUG com.intuit.karate - response time in milliseconds: 114
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:13 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 125
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UDLh0VoAMEZ5w=
+{"amount": 260.0, "currency": "USD", "id": "txn212", "name": "Lena", "title": "Payment", "timestamp": "2024-05-12T08:00:00Z"}
+
+22:00:13.433 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:13.434 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 260.0,
+  "currency": "USD",
+  "id": "txn212",
+  "name": "Lena",
+  "title": "Payment",
+  "timestamp": "2024-05-12T08:00:00Z"
+}
+ 
+
+ 
+22:00:13.434 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn212 
+22:00:13.437 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:13.438 [main] DEBUG com.intuit.karate - request:
+1 > GET https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn213
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:13.571 [main] DEBUG com.intuit.karate - response time in milliseconds: 133
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:13 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 125
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UDMiVGoAMEPtA=
+{"amount": 300.0, "currency": "USD", "id": "txn213", "name": "Mike", "title": "Invoice", "timestamp": "2024-05-13T17:00:00Z"}
+
+22:00:13.572 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:13.572 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 300.0,
+  "currency": "USD",
+  "id": "txn213",
+  "name": "Mike",
+  "title": "Invoice",
+  "timestamp": "2024-05-13T17:00:00Z"
+}
+ 
+
+ 
+22:00:13.572 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn213 
+22:00:13.575 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:13.576 [main] DEBUG com.intuit.karate - request:
+1 > GET https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn214
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:13.692 [main] DEBUG com.intuit.karate - response time in milliseconds: 115
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:13 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 124
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UDNjHjIAMEZxA=
+{"amount": 130.0, "currency": "USD", "id": "txn214", "name": "Nina", "title": "Refund", "timestamp": "2024-05-14T14:30:00Z"}
+
+22:00:13.693 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:13.693 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 130.0,
+  "currency": "USD",
+  "id": "txn214",
+  "name": "Nina",
+  "title": "Refund",
+  "timestamp": "2024-05-14T14:30:00Z"
+}
+ 
+
+ 
+22:00:13.693 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn214 
+22:00:13.696 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:13.698 [main] DEBUG com.intuit.karate - request:
+1 > GET https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn215
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:13.834 [main] DEBUG com.intuit.karate - response time in milliseconds: 136
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:13 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 125
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UDPgExIAMEPLA=
+{"amount": 280.0, "currency": "USD", "id": "txn215", "name": "Owen", "title": "Payment", "timestamp": "2024-05-15T10:20:00Z"}
+
+22:00:13.835 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:13.835 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 280.0,
+  "currency": "USD",
+  "id": "txn215",
+  "name": "Owen",
+  "title": "Payment",
+  "timestamp": "2024-05-15T10:20:00Z"
+}
+ 
+
+ 
+22:00:13.836 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn215 
+22:00:13.840 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:13.841 [main] DEBUG com.intuit.karate - request:
+1 > GET https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn216
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:13.992 [main] DEBUG com.intuit.karate - response time in milliseconds: 151
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:14 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 126
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UDQgm4IAMEPTQ=
+{"amount": 190.0, "currency": "USD", "id": "txn216", "name": "Paula", "title": "Invoice", "timestamp": "2024-05-16T09:50:00Z"}
+
+22:00:13.993 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:13.994 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 190.0,
+  "currency": "USD",
+  "id": "txn216",
+  "name": "Paula",
+  "title": "Invoice",
+  "timestamp": "2024-05-16T09:50:00Z"
+}
+ 
+
+ 
+22:00:13.994 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn216 
+22:00:13.998 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:13.999 [main] DEBUG com.intuit.karate - request:
+1 > GET https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn217
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:14.133 [main] DEBUG com.intuit.karate - response time in milliseconds: 133
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:14 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 125
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UDSg6eIAMEZlg=
+{"amount": 110.0, "currency": "USD", "id": "txn217", "name": "Quinn", "title": "Refund", "timestamp": "2024-05-17T13:40:00Z"}
+
+22:00:14.133 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:14.134 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 110.0,
+  "currency": "USD",
+  "id": "txn217",
+  "name": "Quinn",
+  "title": "Refund",
+  "timestamp": "2024-05-17T13:40:00Z"
+}
+ 
+
+ 
+22:00:14.134 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn217 
+22:00:14.137 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:14.138 [main] DEBUG com.intuit.karate - request:
+1 > GET https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn218
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:14.272 [main] DEBUG com.intuit.karate - response time in milliseconds: 134
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:14 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 127
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UDTh_CoAMEP5w=
+{"amount": 210.0, "currency": "USD", "id": "txn218", "name": "Rachel", "title": "Payment", "timestamp": "2024-05-18T15:15:00Z"}
+
+22:00:14.273 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:14.274 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 210.0,
+  "currency": "USD",
+  "id": "txn218",
+  "name": "Rachel",
+  "title": "Payment",
+  "timestamp": "2024-05-18T15:15:00Z"
+}
+ 
+
+ 
+22:00:14.274 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn218 
+22:00:14.277 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:14.278 [main] DEBUG com.intuit.karate - request:
+1 > GET https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn219
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:14.391 [main] DEBUG com.intuit.karate - response time in milliseconds: 113
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:14 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 126
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UDUh_ZoAMEP5w=
+{"amount": 270.0, "currency": "USD", "id": "txn219", "name": "Steve", "title": "Invoice", "timestamp": "2024-05-19T16:25:00Z"}
+
+22:00:14.392 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:14.392 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 270.0,
+  "currency": "USD",
+  "id": "txn219",
+  "name": "Steve",
+  "title": "Invoice",
+  "timestamp": "2024-05-19T16:25:00Z"
+}
+ 
+
+ 
+22:00:14.392 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn219 
+22:00:14.396 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:14.397 [main] DEBUG com.intuit.karate - request:
+1 > GET https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn220
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:14.532 [main] DEBUG com.intuit.karate - response time in milliseconds: 135
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:14 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 124
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UDWirUoAMEPmg=
+{"amount": 170.0, "currency": "USD", "id": "txn220", "name": "Tina", "title": "Refund", "timestamp": "2024-05-20T12:05:00Z"}
+
+22:00:14.533 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:14.533 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 170.0,
+  "currency": "USD",
+  "id": "txn220",
+  "name": "Tina",
+  "title": "Refund",
+  "timestamp": "2024-05-20T12:05:00Z"
+}
+ 
+
+ 
+22:00:14.533 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn220 
+22:00:14.536 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:14.537 [main] DEBUG com.intuit.karate - request:
+1 > GET https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn221
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:14.673 [main] DEBUG com.intuit.karate - response time in milliseconds: 136
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:14 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 124
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UDXjy7IAMEZ_Q=
+{"amount": 310.0, "currency": "USD", "id": "txn221", "name": "Uma", "title": "Payment", "timestamp": "2024-05-21T08:10:00Z"}
+
+22:00:14.674 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:14.674 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 310.0,
+  "currency": "USD",
+  "id": "txn221",
+  "name": "Uma",
+  "title": "Payment",
+  "timestamp": "2024-05-21T08:10:00Z"
+}
+ 
+
+ 
+22:00:14.674 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn221 
+22:00:14.678 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:14.678 [main] DEBUG com.intuit.karate - request:
+1 > GET https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn222
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:14.812 [main] DEBUG com.intuit.karate - response time in milliseconds: 133
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:14 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 127
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UDZjy5oAMEP_Q=
+{"amount": 135.0, "currency": "USD", "id": "txn222", "name": "Victor", "title": "Invoice", "timestamp": "2024-05-22T11:45:00Z"}
+
+22:00:14.813 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:14.814 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 135.0,
+  "currency": "USD",
+  "id": "txn222",
+  "name": "Victor",
+  "title": "Invoice",
+  "timestamp": "2024-05-22T11:45:00Z"
+}
+ 
+
+ 
+22:00:14.814 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn222 
+22:00:14.818 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:14.819 [main] DEBUG com.intuit.karate - request:
+1 > GET https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn223
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:14.951 [main] DEBUG com.intuit.karate - response time in milliseconds: 131
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:15 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 125
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UDahDBIAMEZCQ=
+{"amount": 145.0, "currency": "USD", "id": "txn223", "name": "Wendy", "title": "Refund", "timestamp": "2024-05-23T13:30:00Z"}
+
+22:00:14.951 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:14.952 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 145.0,
+  "currency": "USD",
+  "id": "txn223",
+  "name": "Wendy",
+  "title": "Refund",
+  "timestamp": "2024-05-23T13:30:00Z"
+}
+ 
+
+ 
+22:00:14.952 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn223 
+22:00:14.955 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:14.956 [main] DEBUG com.intuit.karate - request:
+1 > GET https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn224
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:15.075 [main] DEBUG com.intuit.karate - response time in milliseconds: 118
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:15 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 127
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UDbh-RIAMEPhw=
+{"amount": 295.0, "currency": "USD", "id": "txn224", "name": "Xander", "title": "Payment", "timestamp": "2024-05-24T10:50:00Z"}
+
+22:00:15.075 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:15.076 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 295.0,
+  "currency": "USD",
+  "id": "txn224",
+  "name": "Xander",
+  "title": "Payment",
+  "timestamp": "2024-05-24T10:50:00Z"
+}
+ 
+
+ 
+22:00:15.076 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn224 
+22:00:15.079 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:15.080 [main] DEBUG com.intuit.karate - request:
+1 > GET https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn225
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:15.211 [main] DEBUG com.intuit.karate - response time in milliseconds: 130
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:15 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 125
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UDcjdEIAMEZNg=
+{"amount": 275.0, "currency": "USD", "id": "txn225", "name": "Yara", "title": "Invoice", "timestamp": "2024-05-25T09:15:00Z"}
+
+22:00:15.212 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:15.213 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 275.0,
+  "currency": "USD",
+  "id": "txn225",
+  "name": "Yara",
+  "title": "Invoice",
+  "timestamp": "2024-05-25T09:15:00Z"
+}
+ 
+
+ 
+22:00:15.213 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn225 
+---------------------------------------------------------
+feature: classpath:tests/transactions/04-get-transactions-by-id.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 3.4669
+---------------------------------------------------------
+
+22:00:15.544 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:tests/transactions/04-get-transactions-by-id.feature
+Karate version: 1.5.1
+======================================================
+elapsed:   3.80 | threads:    1 | thread time: 3.47 
+features:     1 | skipped:    0 | efficiency: 0.91
+scenarios:    1 | passed:     1 | failed: 0
+======================================================
+
+HTML report: (paste into browser to view) | Karate version: 1.5.1
+file:///Users/edls/NetBeansProjects/transaction-api/target/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="getTransactionsByIdBad" classname="tests.ParallelRunnerTest" time="0.391">
+    <system-out><![CDATA[22:00:15.585 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:00:15.585 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1747792815585
+22:00:15.587 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:00:15.591 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:15.593 [main] DEBUG com.intuit.karate - request:
+1 > GET https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn2001xxx
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 128
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"transactionId":"txn2001xxx","name":"Alice","title":"Payment","amount":555,"currency":"USD","timestamp":"2024-05-01T10:00:00Z"}
+
+22:00:15.753 [main] DEBUG com.intuit.karate - response time in milliseconds: 159
+1 < 404
+1 < Date: Wed, 21 May 2025 02:00:15 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 56
+1 < Connection: close
+1 < Apigw-Requestid: K5UDigJdoAMEPLA=
+{"message": "Transaction not found", "id": "txn2001xxx"}
+
+22:00:15.755 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:15.756 [main] DEBUG com.intuit.karate - request:
+1 > GET https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn2002xxx
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 126
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"transactionId":"txn2002xxx","name":"Bob","title":"Invoice","amount":666,"currency":"USD","timestamp":"2024-05-02T15:30:00Z"}
+
+22:00:15.894 [main] DEBUG com.intuit.karate - response time in milliseconds: 138
+1 < 404
+1 < Date: Wed, 21 May 2025 02:00:16 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 56
+1 < Connection: close
+1 < Apigw-Requestid: K5UDjhrIoAMEPeg=
+{"message": "Transaction not found", "id": "txn2002xxx"}
+
+---------------------------------------------------------
+feature: classpath:tests/transactions/05-get-transactions-by-id-bad.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 0.3078
+---------------------------------------------------------
+
+22:00:15.950 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:tests/transactions/05-get-transactions-by-id-bad.feature
+Karate version: 1.5.1
+======================================================
+elapsed:   0.37 | threads:    1 | thread time: 0.31 
+features:     1 | skipped:    0 | efficiency: 0.84
+scenarios:    1 | passed:     1 | failed: 0
+======================================================
+
+HTML report: (paste into browser to view) | Karate version: 1.5.1
+file:///Users/edls/NetBeansProjects/transaction-api/target/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="updateTransactions" classname="tests.ParallelRunnerTest" time="6.522">
+    <system-out><![CDATA[22:00:15.976 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:00:15.977 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1747792815977
+22:00:15.979 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:00:15.985 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:15.986 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transactionId' with new value: transaction.transactionId
+22:00:15.989 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn201
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 100
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Alice","title":"Payment","amount":1100,"currency":"USD","timestamp":"2024-05-01T10:00:00Z"}
+
+22:00:16.272 [main] DEBUG com.intuit.karate - response time in milliseconds: 282
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:16 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 127
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UDmjycIAMEPRQ=
+{"amount": 1100.0, "currency": "USD", "id": "txn201", "name": "Alice", "timestamp": "2024-05-01T10:00:00Z", "title": "Payment"}
+
+22:00:16.272 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:16.273 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 1100.0,
+  "currency": "USD",
+  "id": "txn201",
+  "name": "Alice",
+  "timestamp": "2024-05-01T10:00:00Z",
+  "title": "Payment"
+}
+ 
+
+ 
+22:00:16.273 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn201 
+22:00:16.279 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:16.280 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transactionId' with new value: transaction.transactionId
+22:00:16.281 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn202
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 98
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Bob","title":"Invoice","amount":1200,"currency":"USD","timestamp":"2024-05-02T15:30:00Z"}
+
+22:00:16.590 [main] DEBUG com.intuit.karate - response time in milliseconds: 309
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:16 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 125
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UDpjBboAMEPVg=
+{"amount": 1200.0, "currency": "USD", "id": "txn202", "name": "Bob", "timestamp": "2024-05-02T15:30:00Z", "title": "Invoice"}
+
+22:00:16.591 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:16.591 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 1200.0,
+  "currency": "USD",
+  "id": "txn202",
+  "name": "Bob",
+  "timestamp": "2024-05-02T15:30:00Z",
+  "title": "Invoice"
+}
+ 
+
+ 
+22:00:16.591 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn202 
+22:00:16.596 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:16.597 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transactionId' with new value: transaction.transactionId
+22:00:16.599 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn203
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 101
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Charlie","title":"Refund","amount":1150,"currency":"USD","timestamp":"2024-05-03T09:45:00Z"}
+
+22:00:16.853 [main] DEBUG com.intuit.karate - response time in milliseconds: 254
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:16 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 128
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UDshXKoAMEZJQ=
+{"amount": 1150.0, "currency": "USD", "id": "txn203", "name": "Charlie", "timestamp": "2024-05-03T09:45:00Z", "title": "Refund"}
+
+22:00:16.854 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:16.854 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 1150.0,
+  "currency": "USD",
+  "id": "txn203",
+  "name": "Charlie",
+  "timestamp": "2024-05-03T09:45:00Z",
+  "title": "Refund"
+}
+ 
+
+ 
+22:00:16.854 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn203 
+22:00:16.857 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:16.858 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transactionId' with new value: transaction.transactionId
+22:00:16.859 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn204
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 100
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Diana","title":"Payment","amount":1250,"currency":"USD","timestamp":"2024-05-04T11:20:00Z"}
+
+22:00:17.092 [main] DEBUG com.intuit.karate - response time in milliseconds: 233
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:17 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 127
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UDujpIoAMEZaw=
+{"amount": 1250.0, "currency": "USD", "id": "txn204", "name": "Diana", "timestamp": "2024-05-04T11:20:00Z", "title": "Payment"}
+
+22:00:17.092 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:17.092 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 1250.0,
+  "currency": "USD",
+  "id": "txn204",
+  "name": "Diana",
+  "timestamp": "2024-05-04T11:20:00Z",
+  "title": "Payment"
+}
+ 
+
+ 
+22:00:17.093 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn204 
+22:00:17.096 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:17.097 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transactionId' with new value: transaction.transactionId
+22:00:17.098 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn205
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 100
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Ethan","title":"Invoice","amount":1300,"currency":"USD","timestamp":"2024-05-05T13:10:00Z"}
+
+22:00:17.334 [main] DEBUG com.intuit.karate - response time in milliseconds: 236
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:17 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 127
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UDxh9ZIAMEZ5w=
+{"amount": 1300.0, "currency": "USD", "id": "txn205", "name": "Ethan", "timestamp": "2024-05-05T13:10:00Z", "title": "Invoice"}
+
+22:00:17.335 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:17.335 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 1300.0,
+  "currency": "USD",
+  "id": "txn205",
+  "name": "Ethan",
+  "timestamp": "2024-05-05T13:10:00Z",
+  "title": "Invoice"
+}
+ 
+
+ 
+22:00:17.335 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn205 
+22:00:17.339 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:17.339 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transactionId' with new value: transaction.transactionId
+22:00:17.340 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn206
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 100
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Fiona","title":"Payment","amount":1120,"currency":"USD","timestamp":"2024-05-06T14:00:00Z"}
+
+22:00:17.573 [main] DEBUG com.intuit.karate - response time in milliseconds: 232
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:17 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 127
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UDziMPIAMEPJg=
+{"amount": 1120.0, "currency": "USD", "id": "txn206", "name": "Fiona", "timestamp": "2024-05-06T14:00:00Z", "title": "Payment"}
+
+22:00:17.573 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:17.574 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 1120.0,
+  "currency": "USD",
+  "id": "txn206",
+  "name": "Fiona",
+  "timestamp": "2024-05-06T14:00:00Z",
+  "title": "Payment"
+}
+ 
+
+ 
+22:00:17.574 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn206 
+22:00:17.577 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:17.578 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transactionId' with new value: transaction.transactionId
+22:00:17.579 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn207
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 100
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"George","title":"Refund","amount":1180,"currency":"USD","timestamp":"2024-05-07T16:00:00Z"}
+
+22:00:17.793 [main] DEBUG com.intuit.karate - response time in milliseconds: 213
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:17 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 127
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UD1g8TIAMEPHA=
+{"amount": 1180.0, "currency": "USD", "id": "txn207", "name": "George", "timestamp": "2024-05-07T16:00:00Z", "title": "Refund"}
+
+22:00:17.793 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:17.794 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 1180.0,
+  "currency": "USD",
+  "id": "txn207",
+  "name": "George",
+  "timestamp": "2024-05-07T16:00:00Z",
+  "title": "Refund"
+}
+ 
+
+ 
+22:00:17.794 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn207 
+22:00:17.798 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:17.799 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transactionId' with new value: transaction.transactionId
+22:00:17.799 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn208
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 101
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Hannah","title":"Invoice","amount":1220,"currency":"USD","timestamp":"2024-05-08T10:15:00Z"}
+
+22:00:18.053 [main] DEBUG com.intuit.karate - response time in milliseconds: 253
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:18 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 128
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UD4ittoAMEZhw=
+{"amount": 1220.0, "currency": "USD", "id": "txn208", "name": "Hannah", "timestamp": "2024-05-08T10:15:00Z", "title": "Invoice"}
+
+22:00:18.054 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:18.054 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 1220.0,
+  "currency": "USD",
+  "id": "txn208",
+  "name": "Hannah",
+  "timestamp": "2024-05-08T10:15:00Z",
+  "title": "Invoice"
+}
+ 
+
+ 
+22:00:18.054 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn208 
+22:00:18.058 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:18.058 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transactionId' with new value: transaction.transactionId
+22:00:18.059 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn209
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 98
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Ian","title":"Payment","amount":1140,"currency":"USD","timestamp":"2024-05-09T09:00:00Z"}
+
+22:00:18.313 [main] DEBUG com.intuit.karate - response time in milliseconds: 254
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:18 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 125
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UD6j7sIAMEZ_Q=
+{"amount": 1140.0, "currency": "USD", "id": "txn209", "name": "Ian", "timestamp": "2024-05-09T09:00:00Z", "title": "Payment"}
+
+22:00:18.314 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:18.314 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 1140.0,
+  "currency": "USD",
+  "id": "txn209",
+  "name": "Ian",
+  "timestamp": "2024-05-09T09:00:00Z",
+  "title": "Payment"
+}
+ 
+
+ 
+22:00:18.314 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn209 
+22:00:18.318 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:18.318 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transactionId' with new value: transaction.transactionId
+22:00:18.319 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn210
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 98
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Jill","title":"Refund","amount":1160,"currency":"USD","timestamp":"2024-05-10T12:00:00Z"}
+
+22:00:18.553 [main] DEBUG com.intuit.karate - response time in milliseconds: 234
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:18 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 125
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UD9jluIAMEZ0Q=
+{"amount": 1160.0, "currency": "USD", "id": "txn210", "name": "Jill", "timestamp": "2024-05-10T12:00:00Z", "title": "Refund"}
+
+22:00:18.554 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:18.554 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 1160.0,
+  "currency": "USD",
+  "id": "txn210",
+  "name": "Jill",
+  "timestamp": "2024-05-10T12:00:00Z",
+  "title": "Refund"
+}
+ 
+
+ 
+22:00:18.554 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn210 
+22:00:18.558 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:18.558 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transactionId' with new value: transaction.transactionId
+22:00:18.559 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn211
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 100
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Kevin","title":"Invoice","amount":1240,"currency":"USD","timestamp":"2024-05-11T11:30:00Z"}
+
+22:00:18.773 [main] DEBUG com.intuit.karate - response time in milliseconds: 213
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:18 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 127
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UD_hufoAMEPFw=
+{"amount": 1240.0, "currency": "USD", "id": "txn211", "name": "Kevin", "timestamp": "2024-05-11T11:30:00Z", "title": "Invoice"}
+
+22:00:18.773 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:18.774 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 1240.0,
+  "currency": "USD",
+  "id": "txn211",
+  "name": "Kevin",
+  "timestamp": "2024-05-11T11:30:00Z",
+  "title": "Invoice"
+}
+ 
+
+ 
+22:00:18.774 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn211 
+22:00:18.777 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:18.778 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transactionId' with new value: transaction.transactionId
+22:00:18.779 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn212
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 99
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Lena","title":"Payment","amount":1260,"currency":"USD","timestamp":"2024-05-12T08:00:00Z"}
+
+22:00:18.996 [main] DEBUG com.intuit.karate - response time in milliseconds: 216
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:19 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 126
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UEBhu9oAMEPFw=
+{"amount": 1260.0, "currency": "USD", "id": "txn212", "name": "Lena", "timestamp": "2024-05-12T08:00:00Z", "title": "Payment"}
+
+22:00:18.996 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:18.997 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 1260.0,
+  "currency": "USD",
+  "id": "txn212",
+  "name": "Lena",
+  "timestamp": "2024-05-12T08:00:00Z",
+  "title": "Payment"
+}
+ 
+
+ 
+22:00:18.997 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn212 
+22:00:19.000 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:19.000 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transactionId' with new value: transaction.transactionId
+22:00:19.001 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn213
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 99
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Mike","title":"Invoice","amount":1300,"currency":"USD","timestamp":"2024-05-13T17:00:00Z"}
+
+22:00:19.211 [main] DEBUG com.intuit.karate - response time in milliseconds: 210
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:19 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 126
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UEEiYVoAMEZKw=
+{"amount": 1300.0, "currency": "USD", "id": "txn213", "name": "Mike", "timestamp": "2024-05-13T17:00:00Z", "title": "Invoice"}
+
+22:00:19.212 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:19.212 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 1300.0,
+  "currency": "USD",
+  "id": "txn213",
+  "name": "Mike",
+  "timestamp": "2024-05-13T17:00:00Z",
+  "title": "Invoice"
+}
+ 
+
+ 
+22:00:19.212 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn213 
+22:00:19.216 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:19.216 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transactionId' with new value: transaction.transactionId
+22:00:19.217 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn214
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 98
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Nina","title":"Refund","amount":1130,"currency":"USD","timestamp":"2024-05-14T14:30:00Z"}
+
+22:00:19.432 [main] DEBUG com.intuit.karate - response time in milliseconds: 215
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:19 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 125
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UEGjzBIAMEP1Q=
+{"amount": 1130.0, "currency": "USD", "id": "txn214", "name": "Nina", "timestamp": "2024-05-14T14:30:00Z", "title": "Refund"}
+
+22:00:19.433 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:19.433 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 1130.0,
+  "currency": "USD",
+  "id": "txn214",
+  "name": "Nina",
+  "timestamp": "2024-05-14T14:30:00Z",
+  "title": "Refund"
+}
+ 
+
+ 
+22:00:19.434 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn214 
+22:00:19.437 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:19.437 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transactionId' with new value: transaction.transactionId
+22:00:19.438 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn215
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 99
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Owen","title":"Payment","amount":1280,"currency":"USD","timestamp":"2024-05-15T10:20:00Z"}
+
+22:00:19.652 [main] DEBUG com.intuit.karate - response time in milliseconds: 214
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:19 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 126
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UEIgYSoAMEP9w=
+{"amount": 1280.0, "currency": "USD", "id": "txn215", "name": "Owen", "timestamp": "2024-05-15T10:20:00Z", "title": "Payment"}
+
+22:00:19.652 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:19.653 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 1280.0,
+  "currency": "USD",
+  "id": "txn215",
+  "name": "Owen",
+  "timestamp": "2024-05-15T10:20:00Z",
+  "title": "Payment"
+}
+ 
+
+ 
+22:00:19.653 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn215 
+22:00:19.656 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:19.656 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transactionId' with new value: transaction.transactionId
+22:00:19.657 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn216
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 100
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Paula","title":"Invoice","amount":1190,"currency":"USD","timestamp":"2024-05-16T09:50:00Z"}
+
+22:00:19.880 [main] DEBUG com.intuit.karate - response time in milliseconds: 223
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:19 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 127
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UEKiOuoAMEZPQ=
+{"amount": 1190.0, "currency": "USD", "id": "txn216", "name": "Paula", "timestamp": "2024-05-16T09:50:00Z", "title": "Invoice"}
+
+22:00:19.881 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:19.881 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 1190.0,
+  "currency": "USD",
+  "id": "txn216",
+  "name": "Paula",
+  "timestamp": "2024-05-16T09:50:00Z",
+  "title": "Invoice"
+}
+ 
+
+ 
+22:00:19.881 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn216 
+22:00:19.884 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:19.885 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transactionId' with new value: transaction.transactionId
+22:00:19.885 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn217
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 99
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Quinn","title":"Refund","amount":1110,"currency":"USD","timestamp":"2024-05-17T13:40:00Z"}
+
+22:00:20.113 [main] DEBUG com.intuit.karate - response time in milliseconds: 228
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:20 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 126
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UENiKCoAMEZnQ=
+{"amount": 1110.0, "currency": "USD", "id": "txn217", "name": "Quinn", "timestamp": "2024-05-17T13:40:00Z", "title": "Refund"}
+
+22:00:20.114 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:20.114 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 1110.0,
+  "currency": "USD",
+  "id": "txn217",
+  "name": "Quinn",
+  "timestamp": "2024-05-17T13:40:00Z",
+  "title": "Refund"
+}
+ 
+
+ 
+22:00:20.114 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn217 
+22:00:20.117 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:20.117 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transactionId' with new value: transaction.transactionId
+22:00:20.118 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn218
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 101
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Rachel","title":"Payment","amount":1210,"currency":"USD","timestamp":"2024-05-18T15:15:00Z"}
+
+22:00:20.372 [main] DEBUG com.intuit.karate - response time in milliseconds: 253
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:20 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 128
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UEPioBoAMEZYw=
+{"amount": 1210.0, "currency": "USD", "id": "txn218", "name": "Rachel", "timestamp": "2024-05-18T15:15:00Z", "title": "Payment"}
+
+22:00:20.372 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:20.372 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 1210.0,
+  "currency": "USD",
+  "id": "txn218",
+  "name": "Rachel",
+  "timestamp": "2024-05-18T15:15:00Z",
+  "title": "Payment"
+}
+ 
+
+ 
+22:00:20.372 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn218 
+22:00:20.375 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:20.376 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transactionId' with new value: transaction.transactionId
+22:00:20.377 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn219
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 100
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Steve","title":"Invoice","amount":1270,"currency":"USD","timestamp":"2024-05-19T16:25:00Z"}
+
+22:00:20.614 [main] DEBUG com.intuit.karate - response time in milliseconds: 236
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:20 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 127
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UERgCkoAMEZig=
+{"amount": 1270.0, "currency": "USD", "id": "txn219", "name": "Steve", "timestamp": "2024-05-19T16:25:00Z", "title": "Invoice"}
+
+22:00:20.614 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:20.614 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 1270.0,
+  "currency": "USD",
+  "id": "txn219",
+  "name": "Steve",
+  "timestamp": "2024-05-19T16:25:00Z",
+  "title": "Invoice"
+}
+ 
+
+ 
+22:00:20.614 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn219 
+22:00:20.617 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:20.617 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transactionId' with new value: transaction.transactionId
+22:00:20.618 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn220
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 98
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Tina","title":"Refund","amount":1170,"currency":"USD","timestamp":"2024-05-20T12:05:00Z"}
+
+22:00:20.853 [main] DEBUG com.intuit.karate - response time in milliseconds: 234
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:20 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 125
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UEUiCloAMEPRg=
+{"amount": 1170.0, "currency": "USD", "id": "txn220", "name": "Tina", "timestamp": "2024-05-20T12:05:00Z", "title": "Refund"}
+
+22:00:20.853 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:20.854 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 1170.0,
+  "currency": "USD",
+  "id": "txn220",
+  "name": "Tina",
+  "timestamp": "2024-05-20T12:05:00Z",
+  "title": "Refund"
+}
+ 
+
+ 
+22:00:20.854 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn220 
+22:00:20.857 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:20.858 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transactionId' with new value: transaction.transactionId
+22:00:20.858 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn221
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 98
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Uma","title":"Payment","amount":1310,"currency":"USD","timestamp":"2024-05-21T08:10:00Z"}
+
+22:00:21.096 [main] DEBUG com.intuit.karate - response time in milliseconds: 238
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:21 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 125
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UEWi4gIAMEZKA=
+{"amount": 1310.0, "currency": "USD", "id": "txn221", "name": "Uma", "timestamp": "2024-05-21T08:10:00Z", "title": "Payment"}
+
+22:00:21.097 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:21.097 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 1310.0,
+  "currency": "USD",
+  "id": "txn221",
+  "name": "Uma",
+  "timestamp": "2024-05-21T08:10:00Z",
+  "title": "Payment"
+}
+ 
+
+ 
+22:00:21.097 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn221 
+22:00:21.100 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:21.101 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transactionId' with new value: transaction.transactionId
+22:00:21.101 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn222
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 101
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Victor","title":"Invoice","amount":1135,"currency":"USD","timestamp":"2024-05-22T11:45:00Z"}
+
+22:00:21.362 [main] DEBUG com.intuit.karate - response time in milliseconds: 260
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:21 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 128
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UEZjZuoAMEZQg=
+{"amount": 1135.0, "currency": "USD", "id": "txn222", "name": "Victor", "timestamp": "2024-05-22T11:45:00Z", "title": "Invoice"}
+
+22:00:21.363 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:21.363 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 1135.0,
+  "currency": "USD",
+  "id": "txn222",
+  "name": "Victor",
+  "timestamp": "2024-05-22T11:45:00Z",
+  "title": "Invoice"
+}
+ 
+
+ 
+22:00:21.364 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn222 
+22:00:21.366 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:21.367 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transactionId' with new value: transaction.transactionId
+22:00:21.367 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn223
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 99
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Wendy","title":"Refund","amount":1145,"currency":"USD","timestamp":"2024-05-23T13:30:00Z"}
+
+22:00:21.591 [main] DEBUG com.intuit.karate - response time in milliseconds: 224
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:21 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 126
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UEbhACIAMEPkA=
+{"amount": 1145.0, "currency": "USD", "id": "txn223", "name": "Wendy", "timestamp": "2024-05-23T13:30:00Z", "title": "Refund"}
+
+22:00:21.592 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:21.592 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 1145.0,
+  "currency": "USD",
+  "id": "txn223",
+  "name": "Wendy",
+  "timestamp": "2024-05-23T13:30:00Z",
+  "title": "Refund"
+}
+ 
+
+ 
+22:00:21.593 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn223 
+22:00:21.596 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:21.597 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transactionId' with new value: transaction.transactionId
+22:00:21.597 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn224
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 101
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Xander","title":"Payment","amount":1295,"currency":"USD","timestamp":"2024-05-24T10:50:00Z"}
+
+22:00:21.833 [main] DEBUG com.intuit.karate - response time in milliseconds: 236
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:21 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 128
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UEehIQIAMEPDg=
+{"amount": 1295.0, "currency": "USD", "id": "txn224", "name": "Xander", "timestamp": "2024-05-24T10:50:00Z", "title": "Payment"}
+
+22:00:21.833 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:21.834 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 1295.0,
+  "currency": "USD",
+  "id": "txn224",
+  "name": "Xander",
+  "timestamp": "2024-05-24T10:50:00Z",
+  "title": "Payment"
+}
+ 
+
+ 
+22:00:21.834 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn224 
+22:00:21.837 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:21.837 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transactionId' with new value: transaction.transactionId
+22:00:21.838 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn225
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 99
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Yara","title":"Invoice","amount":1275,"currency":"USD","timestamp":"2024-05-25T09:15:00Z"}
+
+22:00:22.072 [main] DEBUG com.intuit.karate - response time in milliseconds: 234
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:22 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 126
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UEggY7IAMEPLA=
+{"amount": 1275.0, "currency": "USD", "id": "txn225", "name": "Yara", "timestamp": "2024-05-25T09:15:00Z", "title": "Invoice"}
+
+22:00:22.073 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+22:00:22.073 [main] INFO  com.intuit.karate - [print] 
+
+ {
+  "amount": 1275.0,
+  "currency": "USD",
+  "id": "txn225",
+  "name": "Yara",
+  "timestamp": "2024-05-25T09:15:00Z",
+  "title": "Invoice"
+}
+ 
+
+ 
+22:00:22.073 [main] INFO  com.intuit.karate - [print] transaction.transactionId =  txn225 
+---------------------------------------------------------
+feature: classpath:tests/transactions/06-update-transactions.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 6.0948
+---------------------------------------------------------
+
+22:00:22.459 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:tests/transactions/06-update-transactions.feature
+Karate version: 1.5.1
+======================================================
+elapsed:   6.48 | threads:    1 | thread time: 6.10 
+features:     1 | skipped:    0 | efficiency: 0.94
+scenarios:    1 | passed:     1 | failed: 0
+======================================================
+
+HTML report: (paste into browser to view) | Karate version: 1.5.1
+file:///Users/edls/NetBeansProjects/transaction-api/target/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="updateTransactionsBad" classname="tests.ParallelRunnerTest" time="0.326">
+    <system-out><![CDATA[22:00:22.499 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:00:22.500 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1747792822500
+22:00:22.502 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:00:22.505 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:22.506 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transactionId' with new value: transaction.transactionId
+22:00:22.507 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn2001xxx
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 100
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Alice","title":"Payment","amount":1555,"currency":"USD","timestamp":"2024-05-01T10:00:00Z"}
+
+22:00:22.631 [main] DEBUG com.intuit.karate - response time in milliseconds: 124
+1 < 404
+1 < Date: Wed, 21 May 2025 02:00:22 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 36
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UEng0EIAMEZ4Q=
+{"message": "Transaction not found"}
+
+22:00:22.633 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:22.634 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transactionId' with new value: transaction.transactionId
+22:00:22.634 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn2002xxx
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 98
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Bob","title":"Invoice","amount":1666,"currency":"USD","timestamp":"2024-05-02T15:30:00Z"}
+
+22:00:22.753 [main] DEBUG com.intuit.karate - response time in milliseconds: 119
+1 < 404
+1 < Date: Wed, 21 May 2025 02:00:22 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 36
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UEoixFoAMEZUQ=
+{"message": "Transaction not found"}
+
+---------------------------------------------------------
+feature: classpath:tests/transactions/07-update-transactions-bad.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 0.2511
+---------------------------------------------------------
+
+22:00:22.802 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:tests/transactions/07-update-transactions-bad.feature
+Karate version: 1.5.1
+======================================================
+elapsed:   0.30 | threads:    1 | thread time: 0.25 
+features:     1 | skipped:    0 | efficiency: 0.83
+scenarios:    1 | passed:     1 | failed: 0
+======================================================
+
+HTML report: (paste into browser to view) | Karate version: 1.5.1
+file:///Users/edls/NetBeansProjects/transaction-api/target/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="deleteTransactionsFail" classname="tests.ParallelRunnerTest" time="0.318">
+    <system-out><![CDATA[22:00:22.826 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:00:22.826 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1747792822826
+22:00:22.827 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:00:22.832 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:22.833 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn2001xxx
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:22.973 [main] DEBUG com.intuit.karate - response time in milliseconds: 140
+1 < 404
+1 < Date: Wed, 21 May 2025 02:00:23 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 36
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UEqisbIAMEPtA=
+{"message": "Transaction not found"}
+
+22:00:22.976 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:22.977 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn2002xxx
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:23.092 [main] DEBUG com.intuit.karate - response time in milliseconds: 115
+1 < 404
+1 < Date: Wed, 21 May 2025 02:00:23 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 36
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UErgI_IAMEZig=
+{"message": "Transaction not found"}
+
+---------------------------------------------------------
+feature: classpath:tests/transactions/08-delete-transactions-bad.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 0.2654
+---------------------------------------------------------
+
+22:00:23.123 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:tests/transactions/08-delete-transactions-bad.feature
+Karate version: 1.5.1
+======================================================
+elapsed:   0.30 | threads:    1 | thread time: 0.27 
+features:     1 | skipped:    0 | efficiency: 0.89
+scenarios:    1 | passed:     1 | failed: 0
+======================================================
+
+HTML report: (paste into browser to view) | Karate version: 1.5.1
+file:///Users/edls/NetBeansProjects/transaction-api/target/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="deleteTransactions" classname="tests.ParallelRunnerTest" time="4.714">
+    <system-out><![CDATA[22:00:23.143 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:00:23.144 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1747792823144
+22:00:23.146 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:00:23.150 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:23.151 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn201
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:23.313 [main] DEBUG com.intuit.karate - response time in milliseconds: 162
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:23 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 34
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UEtgaXIAMEPDQ=
+{"message": "Transaction deleted"}
+
+22:00:23.316 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:23.317 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn202
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:23.512 [main] DEBUG com.intuit.karate - response time in milliseconds: 194
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:23 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 34
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UEviYCIAMEZPQ=
+{"message": "Transaction deleted"}
+
+22:00:23.516 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:23.517 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn203
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:23.733 [main] DEBUG com.intuit.karate - response time in milliseconds: 216
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:23 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 34
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UExh7ToAMEPOA=
+{"message": "Transaction deleted"}
+
+22:00:23.737 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:23.737 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn204
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:23.913 [main] DEBUG com.intuit.karate - response time in milliseconds: 175
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:24 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 34
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UEzja7oAMEPfw=
+{"message": "Transaction deleted"}
+
+22:00:23.915 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:23.916 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn205
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:24.092 [main] DEBUG com.intuit.karate - response time in milliseconds: 175
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:24 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 34
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UE1h5QoAMEPVw=
+{"message": "Transaction deleted"}
+
+22:00:24.094 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:24.095 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn206
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:24.252 [main] DEBUG com.intuit.karate - response time in milliseconds: 157
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:24 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 34
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UE3jMxIAMEP4w=
+{"message": "Transaction deleted"}
+
+22:00:24.255 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:24.256 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn207
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:24.431 [main] DEBUG com.intuit.karate - response time in milliseconds: 175
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:24 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 34
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UE4jvTIAMEZxQ=
+{"message": "Transaction deleted"}
+
+22:00:24.434 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:24.435 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn208
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:24.614 [main] DEBUG com.intuit.karate - response time in milliseconds: 178
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:24 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 34
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UE6gM5IAMEZig=
+{"message": "Transaction deleted"}
+
+22:00:24.617 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:24.617 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn209
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:24.773 [main] DEBUG com.intuit.karate - response time in milliseconds: 156
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:24 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 34
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UE8jt3oAMEPPg=
+{"message": "Transaction deleted"}
+
+22:00:24.776 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:24.777 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn210
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:24.934 [main] DEBUG com.intuit.karate - response time in milliseconds: 157
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:25 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 34
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UE9hLdoAMEZjA=
+{"message": "Transaction deleted"}
+
+22:00:24.936 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:24.937 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn211
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:25.132 [main] DEBUG com.intuit.karate - response time in milliseconds: 194
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:25 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 34
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UE_jChoAMEPNw=
+{"message": "Transaction deleted"}
+
+22:00:25.134 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:25.134 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn212
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:25.332 [main] DEBUG com.intuit.karate - response time in milliseconds: 198
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:25 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 34
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UFBhQloAMEZbg=
+{"message": "Transaction deleted"}
+
+22:00:25.335 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:25.336 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn213
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:25.513 [main] DEBUG com.intuit.karate - response time in milliseconds: 176
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:25 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 34
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UFDhkioAMEZZw=
+{"message": "Transaction deleted"}
+
+22:00:25.515 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:25.516 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn214
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:25.729 [main] DEBUG com.intuit.karate - response time in milliseconds: 213
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:25 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 34
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UFFiMXIAMEZaQ=
+{"message": "Transaction deleted"}
+
+22:00:25.732 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:25.733 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn215
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:25.894 [main] DEBUG com.intuit.karate - response time in milliseconds: 160
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:26 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 34
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UFHhPdoAMEPKw=
+{"message": "Transaction deleted"}
+
+22:00:25.897 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:25.898 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn216
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:26.113 [main] DEBUG com.intuit.karate - response time in milliseconds: 214
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:26 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 34
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UFJjCgoAMEZhA=
+{"message": "Transaction deleted"}
+
+22:00:26.115 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:26.116 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn217
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:26.272 [main] DEBUG com.intuit.karate - response time in milliseconds: 156
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:26 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 34
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UFLhhWoAMEPsg=
+{"message": "Transaction deleted"}
+
+22:00:26.275 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:26.276 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn218
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:26.453 [main] DEBUG com.intuit.karate - response time in milliseconds: 177
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:26 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 34
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UFMgjtIAMEPLA=
+{"message": "Transaction deleted"}
+
+22:00:26.456 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:26.457 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn219
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:26.654 [main] DEBUG com.intuit.karate - response time in milliseconds: 197
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:26 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 34
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UFOjj_IAMEZ_g=
+{"message": "Transaction deleted"}
+
+22:00:26.657 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:26.658 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn220
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:26.811 [main] DEBUG com.intuit.karate - response time in milliseconds: 152
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:26 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 34
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UFQi6wIAMEZUQ=
+{"message": "Transaction deleted"}
+
+22:00:26.814 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:26.814 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn221
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:26.972 [main] DEBUG com.intuit.karate - response time in milliseconds: 158
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:27 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 34
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UFSjHGoAMEZKA=
+{"message": "Transaction deleted"}
+
+22:00:26.975 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:26.976 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn222
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:27.152 [main] DEBUG com.intuit.karate - response time in milliseconds: 176
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:27 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 34
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UFTj55oAMEZNg=
+{"message": "Transaction deleted"}
+
+22:00:27.155 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:27.155 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn223
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:27.332 [main] DEBUG com.intuit.karate - response time in milliseconds: 176
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:27 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 34
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UFVhUHoAMEZJw=
+{"message": "Transaction deleted"}
+
+22:00:27.334 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:27.335 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn224
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:27.511 [main] DEBUG com.intuit.karate - response time in milliseconds: 176
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:27 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 34
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UFXicZIAMEPhw=
+{"message": "Transaction deleted"}
+
+22:00:27.514 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'transaction' with new value: __arg.transaction
+22:00:27.515 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn225
+1 > Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:00:27.711 [main] DEBUG com.intuit.karate - response time in milliseconds: 196
+1 < 200
+1 < Date: Wed, 21 May 2025 02:00:27 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 34
+1 < Connection: keep-alive
+1 < Apigw-Requestid: K5UFZhLrIAMEPUA=
+{"message": "Transaction deleted"}
+
+---------------------------------------------------------
+feature: classpath:tests/transactions/09-delete-transactions.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 4.5663
+---------------------------------------------------------
+
+22:00:27.831 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:tests/transactions/09-delete-transactions.feature
+Karate version: 1.5.1
+======================================================
+elapsed:   4.69 | threads:    1 | thread time: 4.57 
+features:     1 | skipped:    0 | efficiency: 0.97
+scenarios:    1 | passed:     1 | failed: 0
+======================================================
+
+HTML report: (paste into browser to view) | Karate version: 1.5.1
+file:///Users/edls/NetBeansProjects/transaction-api/target/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+  </testcase>
+</testsuite>

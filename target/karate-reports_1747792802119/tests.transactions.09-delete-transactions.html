@@ -1,0 +1,5161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"d3e26f94-8c8b-4850-a64f-dce2a2d55e9c",karate_version:"1.5.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>tests.transactions.09-delete-transactions</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-05-20 09:39:04 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:6]"><span>[1:6]</span> <span>Test delete transaction by id</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">tests/transactions/09-delete-transactions.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Delete transactions by id</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name">Test delete transaction by id</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>4496</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:6]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:6]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def goodData = read(&#39;classpath:data/transactions.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">21:39:00.077 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def check =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.7">function(list) {
+  karate.forEach(list, function(row) {
+    karate.call(&#39;classpath:tests/transaction/delete-transaction.feature&#39;,{ transaction: row });
+  });
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>eval check(goodData)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4494</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.15.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">tests.transaction.delete-transaction</div>
+      </div>
+      <div class="time-cell passed">174</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transaction = __arg.transaction</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transactionId = transaction.transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/&#39; + transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">173</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15.0.call.0.7">21:39:00.082 request:
+1 &gt; DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn201
+1 &gt; Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+21:39:00.255 response time in milliseconds: 172
+1 &lt; 200
+1 &lt; Date: Wed, 21 May 2025 01:39:00 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 34
+1 &lt; Connection: keep-alive
+1 &lt; Apigw-Requestid: K5Q8OhNIIAMEPSA=
+{&quot;message&quot;: &quot;Transaction deleted&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.message == &#39;Transaction deleted&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.15.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">tests.transaction.delete-transaction</div>
+      </div>
+      <div class="time-cell passed">175</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transaction = __arg.transaction</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transactionId = transaction.transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/&#39; + transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">175</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15.0.call.0.7">21:39:00.258 request:
+1 &gt; DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn202
+1 &gt; Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+21:39:00.432 response time in milliseconds: 174
+1 &lt; 200
+1 &lt; Date: Wed, 21 May 2025 01:39:00 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 34
+1 &lt; Connection: keep-alive
+1 &lt; Apigw-Requestid: K5Q8PhpsoAMEZJw=
+{&quot;message&quot;: &quot;Transaction deleted&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.message == &#39;Transaction deleted&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.15.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">tests.transaction.delete-transaction</div>
+      </div>
+      <div class="time-cell passed">181</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transaction = __arg.transaction</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transactionId = transaction.transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/&#39; + transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">181</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15.0.call.0.7">21:39:00.435 request:
+1 &gt; DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn203
+1 &gt; Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+21:39:00.615 response time in milliseconds: 180
+1 &lt; 200
+1 &lt; Date: Wed, 21 May 2025 01:39:00 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 34
+1 &lt; Connection: keep-alive
+1 &lt; Apigw-Requestid: K5Q8RhdooAMEPvA=
+{&quot;message&quot;: &quot;Transaction deleted&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.message == &#39;Transaction deleted&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.15.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">tests.transaction.delete-transaction</div>
+      </div>
+      <div class="time-cell passed">194</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transaction = __arg.transaction</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transactionId = transaction.transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/&#39; + transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">193</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15.0.call.0.7">21:39:00.619 request:
+1 &gt; DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn204
+1 &gt; Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+21:39:00.811 response time in milliseconds: 192
+1 &lt; 200
+1 &lt; Date: Wed, 21 May 2025 01:39:00 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 34
+1 &lt; Connection: keep-alive
+1 &lt; Apigw-Requestid: K5Q8TheHoAMEPvA=
+{&quot;message&quot;: &quot;Transaction deleted&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.message == &#39;Transaction deleted&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.15.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">tests.transaction.delete-transaction</div>
+      </div>
+      <div class="time-cell passed">183</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transaction = __arg.transaction</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transactionId = transaction.transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/&#39; + transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">182</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15.0.call.0.7">21:39:00.814 request:
+1 &gt; DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn205
+1 &gt; Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+21:39:00.996 response time in milliseconds: 182
+1 &lt; 200
+1 &lt; Date: Wed, 21 May 2025 01:39:01 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 34
+1 &lt; Connection: keep-alive
+1 &lt; Apigw-Requestid: K5Q8VjTdoAMEPqQ=
+{&quot;message&quot;: &quot;Transaction deleted&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.message == &#39;Transaction deleted&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.15.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">tests.transaction.delete-transaction</div>
+      </div>
+      <div class="time-cell passed">153</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transaction = __arg.transaction</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transactionId = transaction.transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/&#39; + transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">152</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15.0.call.0.7">21:39:01.000 request:
+1 &gt; DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn206
+1 &gt; Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+21:39:01.151 response time in milliseconds: 150
+1 &lt; 200
+1 &lt; Date: Wed, 21 May 2025 01:39:01 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 34
+1 &lt; Connection: keep-alive
+1 &lt; Apigw-Requestid: K5Q8XgFeoAMEZ_g=
+{&quot;message&quot;: &quot;Transaction deleted&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.message == &#39;Transaction deleted&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.15.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">tests.transaction.delete-transaction</div>
+      </div>
+      <div class="time-cell passed">179</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transaction = __arg.transaction</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transactionId = transaction.transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/&#39; + transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">178</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15.0.call.0.7">21:39:01.155 request:
+1 &gt; DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn207
+1 &gt; Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+21:39:01.333 response time in milliseconds: 177
+1 &lt; 200
+1 &lt; Date: Wed, 21 May 2025 01:39:01 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 34
+1 &lt; Connection: keep-alive
+1 &lt; Apigw-Requestid: K5Q8Yji5IAMEZhA=
+{&quot;message&quot;: &quot;Transaction deleted&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.message == &#39;Transaction deleted&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.15.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">tests.transaction.delete-transaction</div>
+      </div>
+      <div class="time-cell passed">177</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transaction = __arg.transaction</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transactionId = transaction.transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/&#39; + transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">176</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15.0.call.0.7">21:39:01.336 request:
+1 &gt; DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn208
+1 &gt; Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+21:39:01.512 response time in milliseconds: 175
+1 &lt; 200
+1 &lt; Date: Wed, 21 May 2025 01:39:01 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 34
+1 &lt; Connection: keep-alive
+1 &lt; Apigw-Requestid: K5Q8aj0ToAMEZiw=
+{&quot;message&quot;: &quot;Transaction deleted&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.message == &#39;Transaction deleted&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.15.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">tests.transaction.delete-transaction</div>
+      </div>
+      <div class="time-cell passed">180</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transaction = __arg.transaction</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transactionId = transaction.transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/&#39; + transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">179</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15.0.call.0.7">21:39:01.515 request:
+1 &gt; DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn209
+1 &gt; Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+21:39:01.693 response time in milliseconds: 178
+1 &lt; 200
+1 &lt; Date: Wed, 21 May 2025 01:39:01 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 34
+1 &lt; Connection: keep-alive
+1 &lt; Apigw-Requestid: K5Q8cikvIAMEPeg=
+{&quot;message&quot;: &quot;Transaction deleted&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.message == &#39;Transaction deleted&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.15.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">tests.transaction.delete-transaction</div>
+      </div>
+      <div class="time-cell passed">159</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transaction = __arg.transaction</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transactionId = transaction.transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/&#39; + transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">158</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15.0.call.0.7">21:39:01.697 request:
+1 &gt; DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn210
+1 &gt; Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+21:39:01.854 response time in milliseconds: 157
+1 &lt; 200
+1 &lt; Date: Wed, 21 May 2025 01:39:01 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 34
+1 &lt; Connection: keep-alive
+1 &lt; Apigw-Requestid: K5Q8ei-eIAMEPrA=
+{&quot;message&quot;: &quot;Transaction deleted&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.message == &#39;Transaction deleted&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.15.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">tests.transaction.delete-transaction</div>
+      </div>
+      <div class="time-cell passed">158</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transaction = __arg.transaction</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transactionId = transaction.transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/&#39; + transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">157</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15.0.call.0.7">21:39:01.857 request:
+1 &gt; DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn211
+1 &gt; Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+21:39:02.014 response time in milliseconds: 156
+1 &lt; 200
+1 &lt; Date: Wed, 21 May 2025 01:39:02 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 34
+1 &lt; Connection: keep-alive
+1 &lt; Apigw-Requestid: K5Q8fjxAoAMEPCA=
+{&quot;message&quot;: &quot;Transaction deleted&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.message == &#39;Transaction deleted&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.15.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">tests.transaction.delete-transaction</div>
+      </div>
+      <div class="time-cell passed">196</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transaction = __arg.transaction</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transactionId = transaction.transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/&#39; + transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">196</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15.0.call.0.7">21:39:02.017 request:
+1 &gt; DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn212
+1 &gt; Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+21:39:02.213 response time in milliseconds: 195
+1 &lt; 200
+1 &lt; Date: Wed, 21 May 2025 01:39:02 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 34
+1 &lt; Connection: keep-alive
+1 &lt; Apigw-Requestid: K5Q8hgPEIAMEPPg=
+{&quot;message&quot;: &quot;Transaction deleted&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.message == &#39;Transaction deleted&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.15.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">tests.transaction.delete-transaction</div>
+      </div>
+      <div class="time-cell passed">177</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transaction = __arg.transaction</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transactionId = transaction.transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/&#39; + transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">177</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15.0.call.0.7">21:39:02.215 request:
+1 &gt; DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn213
+1 &gt; Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+21:39:02.392 response time in milliseconds: 176
+1 &lt; 200
+1 &lt; Date: Wed, 21 May 2025 01:39:02 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 34
+1 &lt; Connection: keep-alive
+1 &lt; Apigw-Requestid: K5Q8jhLmIAMEPLA=
+{&quot;message&quot;: &quot;Transaction deleted&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.message == &#39;Transaction deleted&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.15.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">tests.transaction.delete-transaction</div>
+      </div>
+      <div class="time-cell passed">160</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transaction = __arg.transaction</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transactionId = transaction.transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/&#39; + transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">159</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15.0.call.0.7">21:39:02.395 request:
+1 &gt; DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn214
+1 &gt; Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+21:39:02.554 response time in milliseconds: 159
+1 &lt; 200
+1 &lt; Date: Wed, 21 May 2025 01:39:02 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 34
+1 &lt; Connection: keep-alive
+1 &lt; Apigw-Requestid: K5Q8lhswoAMEZjA=
+{&quot;message&quot;: &quot;Transaction deleted&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.message == &#39;Transaction deleted&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.15.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">tests.transaction.delete-transaction</div>
+      </div>
+      <div class="time-cell passed">196</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transaction = __arg.transaction</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transactionId = transaction.transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/&#39; + transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">196</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15.0.call.0.7">21:39:02.557 request:
+1 &gt; DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn215
+1 &gt; Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+21:39:02.752 response time in milliseconds: 195
+1 &lt; 200
+1 &lt; Date: Wed, 21 May 2025 01:39:02 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 34
+1 &lt; Connection: keep-alive
+1 &lt; Apigw-Requestid: K5Q8mhr_oAMEPHA=
+{&quot;message&quot;: &quot;Transaction deleted&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.message == &#39;Transaction deleted&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.15.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">tests.transaction.delete-transaction</div>
+      </div>
+      <div class="time-cell passed">216</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transaction = __arg.transaction</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transactionId = transaction.transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/&#39; + transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">216</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15.0.call.0.7">21:39:02.755 request:
+1 &gt; DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn216
+1 &gt; Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+21:39:02.970 response time in milliseconds: 215
+1 &lt; 200
+1 &lt; Date: Wed, 21 May 2025 01:39:03 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 34
+1 &lt; Connection: keep-alive
+1 &lt; Apigw-Requestid: K5Q8ohtpoAMEZjA=
+{&quot;message&quot;: &quot;Transaction deleted&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.message == &#39;Transaction deleted&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.15.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">tests.transaction.delete-transaction</div>
+      </div>
+      <div class="time-cell passed">182</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transaction = __arg.transaction</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transactionId = transaction.transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/&#39; + transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">181</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15.0.call.0.7">21:39:02.974 request:
+1 &gt; DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn217
+1 &gt; Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+21:39:03.154 response time in milliseconds: 180
+1 &lt; 200
+1 &lt; Date: Wed, 21 May 2025 01:39:03 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 34
+1 &lt; Connection: keep-alive
+1 &lt; Apigw-Requestid: K5Q8qhqTIAMEPTQ=
+{&quot;message&quot;: &quot;Transaction deleted&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.message == &#39;Transaction deleted&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.15.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">tests.transaction.delete-transaction</div>
+      </div>
+      <div class="time-cell passed">177</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transaction = __arg.transaction</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transactionId = transaction.transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/&#39; + transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">177</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15.0.call.0.7">21:39:03.158 request:
+1 &gt; DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn218
+1 &gt; Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+21:39:03.334 response time in milliseconds: 175
+1 &lt; 200
+1 &lt; Date: Wed, 21 May 2025 01:39:03 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 34
+1 &lt; Connection: keep-alive
+1 &lt; Apigw-Requestid: K5Q8sg22IAMEPJw=
+{&quot;message&quot;: &quot;Transaction deleted&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.message == &#39;Transaction deleted&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.15.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">tests.transaction.delete-transaction</div>
+      </div>
+      <div class="time-cell passed">198</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transaction = __arg.transaction</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transactionId = transaction.transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/&#39; + transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">197</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15.0.call.0.7">21:39:03.338 request:
+1 &gt; DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn219
+1 &gt; Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+21:39:03.534 response time in milliseconds: 195
+1 &lt; 200
+1 &lt; Date: Wed, 21 May 2025 01:39:03 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 34
+1 &lt; Connection: keep-alive
+1 &lt; Apigw-Requestid: K5Q8ujYgIAMEZDQ=
+{&quot;message&quot;: &quot;Transaction deleted&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.message == &#39;Transaction deleted&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.15.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">tests.transaction.delete-transaction</div>
+      </div>
+      <div class="time-cell passed">175</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transaction = __arg.transaction</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transactionId = transaction.transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/&#39; + transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">175</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15.0.call.0.7">21:39:03.538 request:
+1 &gt; DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn220
+1 &gt; Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+21:39:03.712 response time in milliseconds: 173
+1 &lt; 200
+1 &lt; Date: Wed, 21 May 2025 01:39:03 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 34
+1 &lt; Connection: keep-alive
+1 &lt; Apigw-Requestid: K5Q8wi_2oAMEZiA=
+{&quot;message&quot;: &quot;Transaction deleted&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.message == &#39;Transaction deleted&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.15.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">tests.transaction.delete-transaction</div>
+      </div>
+      <div class="time-cell passed">179</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transaction = __arg.transaction</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transactionId = transaction.transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/&#39; + transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">178</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15.0.call.0.7">21:39:03.715 request:
+1 &gt; DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn221
+1 &gt; Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+21:39:03.893 response time in milliseconds: 177
+1 &lt; 200
+1 &lt; Date: Wed, 21 May 2025 01:39:03 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 34
+1 &lt; Connection: keep-alive
+1 &lt; Apigw-Requestid: K5Q8yjVKIAMEZYw=
+{&quot;message&quot;: &quot;Transaction deleted&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.message == &#39;Transaction deleted&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.15.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">tests.transaction.delete-transaction</div>
+      </div>
+      <div class="time-cell passed">158</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transaction = __arg.transaction</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transactionId = transaction.transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/&#39; + transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">158</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15.0.call.0.7">21:39:03.896 request:
+1 &gt; DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn222
+1 &gt; Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+21:39:04.053 response time in milliseconds: 157
+1 &lt; 200
+1 &lt; Date: Wed, 21 May 2025 01:39:04 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 34
+1 &lt; Connection: keep-alive
+1 &lt; Apigw-Requestid: K5Q80j0TIAMEZvg=
+{&quot;message&quot;: &quot;Transaction deleted&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.message == &#39;Transaction deleted&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.15.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">tests.transaction.delete-transaction</div>
+      </div>
+      <div class="time-cell passed">158</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transaction = __arg.transaction</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transactionId = transaction.transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/&#39; + transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">157</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15.0.call.0.7">21:39:04.057 request:
+1 &gt; DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn223
+1 &gt; Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+21:39:04.213 response time in milliseconds: 156
+1 &lt; 200
+1 &lt; Date: Wed, 21 May 2025 01:39:04 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 34
+1 &lt; Connection: keep-alive
+1 &lt; Apigw-Requestid: K5Q81jDEIAMEP5w=
+{&quot;message&quot;: &quot;Transaction deleted&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.message == &#39;Transaction deleted&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.15.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">tests.transaction.delete-transaction</div>
+      </div>
+      <div class="time-cell passed">177</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transaction = __arg.transaction</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transactionId = transaction.transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/&#39; + transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">176</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15.0.call.0.7">21:39:04.217 request:
+1 &gt; DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn224
+1 &gt; Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+21:39:04.392 response time in milliseconds: 175
+1 &lt; 200
+1 &lt; Date: Wed, 21 May 2025 01:39:04 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 34
+1 &lt; Connection: keep-alive
+1 &lt; Apigw-Requestid: K5Q83iH6oAMEPsg=
+{&quot;message&quot;: &quot;Transaction deleted&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.message == &#39;Transaction deleted&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.15.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">tests.transaction.delete-transaction</div>
+      </div>
+      <div class="time-cell passed">178</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transaction = __arg.transaction</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def transactionId = transaction.transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/&#39; + transactionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">177</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15.0.call.0.7">21:39:04.396 request:
+1 &gt; DELETE https://vx5846dgdj.execute-api.us-east-1.amazonaws.com/dev/transactions/txn225
+1 &gt; Host: vx5846dgdj.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+21:39:04.572 response time in milliseconds: 176
+1 &lt; 200
+1 &lt; Date: Wed, 21 May 2025 01:39:04 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 34
+1 &lt; Connection: keep-alive
+1 &lt; Apigw-Requestid: K5Q85i7FIAMEPxA=
+{&quot;message&quot;: &quot;Transaction deleted&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.15.0.call">
+    <div class="step-container" id="0.15.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.message == &#39;Transaction deleted&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
